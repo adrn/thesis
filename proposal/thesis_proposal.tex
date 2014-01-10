@@ -5,35 +5,38 @@
 
 \begin{document}
 
-\title{Measuring the Gravitational Potential of the Milky Way with Stellar Debris}
+\title{Inferring the Gravitational Potential of the Milky Way with Stellar Debris}
 \author{Adrian M. Price-Whelan}
 
 \section{Introduction}
 
-A great surprise from the last century of concerted efforts in both cosmological theory and observation is that familiar, baryonic matter is, perhaps, the exception: [...] by cosmic acceleration due to \emph{dark energy} and dwarfed in mass by the apparent existence of \emph{dark matter}, it seems that ordinary atoms and interactions are inconsequential in the history of the Universe on the largest scales. [...sentence about dark energy...] On galactic scales, the effect of cosmic expansion is masked by the gravitational influence of a network of vast, yet unseen dark matter \emph{halos} that enshroud and support the galaxies that they contain. Cosmological, dark-matter-only simulations of structure formation have demonstrated the dominance of the dark sector on large ($\gtrsim$100~kpc) scales by, e.g., reproducing the observed clustering of galaxies with impressive accuracy (cite many). These simulations also predict universal mass profiles and shapes of dark matter halos \citep{navarro96, others}. However, simply including baryons as passive followers of the dark matter does not carry this consistency to galactic ($\lesssim$10~kpc) scales. It seems that the processes involved in galaxy formation and evolution are not simply dictated by the dark matter: relaxation and energetic feedback from the baryons has been shown to alter the interior structure of halos \citep[e.g.][]{bailin05, pontzen12} (more, maybe also a debatista paper? flattening of potential), calling to question the universality of dark matter halo properties. Hence, detailed measurements of the shape, orientation, radial profile, and extent of dark matter halos provides information about the cosmological formation of these structures, as well as the internal baryonic processes that continue to shape them.
+A great surprise from the last century of concerted efforts in both cosmological theory and observation is that familiar, baryonic matter is, perhaps, the exception: overwhelmed by the energy in cosmic acceleration due to \emph{dark energy} and dwarfed in mass by the apparent existence of \emph{dark matter}, it seems that ordinary atoms and interactions are inconsequential on the largest scales of the Universe. [...sentence about dark energy...] On galactic scales, the effect of cosmic expansion is masked by the gravitational influence of a network of vast, yet unseen dark matter \emph{halos} that enshroud and support the galaxies that they contain. 
 
-Measurements of unseen dark matter on large scales rely on observations of a number of baryonic probes, e.g., the orbits of stars and gas in the Milky Way (rubin 1970, other papers on the rotation curve / Oort problem), large-scale interactions between galaxy clusters (bullet cluster), and gravitational lensing of galaxies by foreground mass (). The earliest work on constraining (and discovering) the dark matter density used the vertical [...] of stars in the solar neighborhood [...] \citep[now known as the \emph{Oort Problem},][]{oort32}. More recently, \cite{bovy12} have repeated [...]. Evidence for the existence of dark matter later resurfaced with the measurement of the rotation curve of M31 \citep{rubin70} and discovery that it remains flat [...]. Using the method proposed in \cite{merrifield92}, [...] finally measured the rotation curve of the Milky Way and again found [...] deviated from Keplerian. With [...], [...] used lensed galaxies to reconstruct the 2D, projected mass density of [several] foreground galaxies, providing one of the tightest and most convincing measurements for the existence of dark matter halos. 
+Cosmological, dark-matter-only simulations of structure formation have demonstrated the dominance of the dark sector on large ($\gtrsim$100~kpc) scales by, e.g., reproducing the observed clustering of galaxies with impressive accuracy (cite many). These simulations also predict that the mass profiles of dark matter halos are universal with shapes that tend to be triaxial \citep{navarro96, others}. However, simply including baryons as passive followers of the dark matter does not carry this consistency to galactic ($\lesssim$10~kpc) scales. The processes involved in galaxy formation and evolution are not simply dictated by the dark matter: relaxation and energetic feedback from the baryons can alter the interior structure of the halos \citep[e.g.][]{bailin05, pontzen12} (more, maybe also a debatista paper? flattening of potential), calling to question the universality of halo properties. Hence, detailed measurements of the shape, orientation, radial profile, and extent of dark matter halos provides information about the cosmological formation of these structures, as well as the internal baryonic processes that continuously shape them.
 
-The most precise measurements of the shape and profile of a dark matter halo comes from the Milky Way itself, where our unique perspective allows a three dimensional analysis of the mass distribution in the halo. Attempts to study the detailed distribution of mass in our own dark matter halo at large distances use stellar tracers and either (1) assume the tracers are sampled from a random, phase-mixed halo population, or (2) exploit known overdensities of stars that form coherent, dynamical substructure. 
+Measurements of dark matter thus far have relied on observations of baryonic tracers, e.g., the orbits of stars and gas in the Milky Way (rubin 1970, other papers on the rotation curve / Oort problem), large-scale interactions between galaxy clusters (bullet cluster), and gravitational lensing of galaxies by foreground mass (). The earliest work on constraining (and discovering) the dark matter density used the vertical motions of stars in the solar neighborhood to determine the contribution of dark matter to the total mass of the Milky Way near the sun \citep[now known as the \emph{Oort Problem},][]{oort32}. More recently, \cite{bovy12} have repeated [...]. Evidence for the existence of dark matter later resurfaced with the measurement of the rotation curve of M31 \citep{rubin70} and discovery that it remains flat [...]. Using the method proposed in \cite{merrifield92}, [...] finally measured the rotation curve of the Milky Way and again found [...] deviated from Keplerian. 
 
+Such studies, while crucially important, do not probe the global shape and distribution of dark matter around the Milky Way, but rather attempt to deconvolve the properties of the dark matter from the baryonic mass near the disk of the Milky Way. The best measurements of the large-scale mass distribution comes from gravitational lensing \citep[e.g.,][]{}, where lensed galaxies and quasars are used to reconstruct the 2D, projected mass density of foreground galaxies, thus providing some of the tightest and most convincing evidence for the existence of dark matter halos. However even these measurements are limited in that they only probe properties of the halo integrated over the line of site. The most precise measurements of the shape and profile of a dark matter halo come instead from the Milky Way, where our unique perspective allows a three dimensional analysis of the mass distribution as a function of distance. Attempts to study the detailed distribution of mass in our own dark matter halo beyond the disk have used stellar tracers and either (1) assume the tracers are sampled from a phase-mixed halo population, or (2) exploit the non-random nature of stars that form coherent substructure. 
+
+\section{\texttt{REWIND}: ...}
+
+The halo is full of substructure: upon writing, there are XX known stellar streams---featuring the prominent Sagittarius and Orphan streams---and many other ambiguous overdensities and structures---e.g., the Virgo overdensity, the Monoceros ring, and many more. As large-area surveys drill fainter and kinematic data gets more precise, streams and substructure seems to be present in every corner of the sky. Before describing our proposed method for using these streams to constrain the potential, we first [look at] Jeans modeling and discuss some of the shortfalls of using this method on the clearly \emph{nonrandom} stellar populations in the halo. We then briefly review other proposed methods for using tidal streams as potential measures. We conclude by presenting an extensible, generative model for well-measured positions and velocities of stellar tracers in tidal streams, then discuss applications of this method to halo RR Lyrae stars.
+
+\subsection{Random tracers in the halo?}
+
+- Brief overview of Jeans modeling
 [ Jeans modeling explain latest \cite{deason12} results ]
-
-[ Nbody modeling to reproduce Sgr ]
-
-(*all are important* - confirmations of each other)
-
-[ Overview of satellites and substructure in the halo ]
-
-[ Status of software in astronomy ]
-
-[ Overview of outreach activities etc? ]
-
-\section{\texttt{REWIND}}
-
-[ Discussion of other modeling techniques ]
 [ - Deason et al. tracers ]
-[ - Action-angle stuff (not easily applied to *real data*) ]
-[ - Law \& Majewski model, why Nbody is tough ]
+
+\subsection{Tidal streams as potential measures}
+- Why it's better to exploit the cold nature of substructure
+
+[ Simplest: orbit fitting ]
+[ Entropy? Penarrubia ]
+[ Action-angle methods: Sanders, Sanderson -- put action angle definitions in Appendix ]
+[ Proper forward-modeling Nbody modeling to reproduce Sgr ]
+[ -- Law \& Majewski model, why Nbody is tough ]
+(*all are important* - confirmations of each other)
 
 [ We want to model the potential that: ]
 [ - exploits the substructure and kinematically associated stars ]
@@ -48,15 +51,23 @@ The most precise measurements of the shape and profile of a dark matter halo com
 
 [ Observational side project ... ]
 
-\section{Astropy}
+\section{Data visualization}
+
+\section{Open source software and Astropy}
+
+Collaborative software development is 
 
 [ All along the way, developing code that can be generalized and used by the community as a whole ]
 
 \section{Outreach and Teaching}
 
-[ Interactive web tools ]
-[ Scicoder ]
-[ Python workshops ]
+I am passionate about education, both in the context of higher education in the classroom and through engaging the public with outreach and [...]. I continue to be an active participant in our bi-weekly public outreach events and a volunteer for the Rooftop Variables program, which pairs middle- or high-school astronomy clubs with graduate students from our department. These events and programs enable direct communication between the graduate students and both the general public and K-12 students around New York City. 
+
+Though I have already finished my formal teaching requirement within the department (external funding), I have continued to seek [...]. With Demitri Muna (OSU), we have created and run a five-day programming and computing workshop for four consecutive summers (SciCoder) along with an all-day introduction to Python workshop at the past two winter meetings of the American Astronomical Society (AAS). These connect my [...] for education with my experience as a programmer and have taught me a lot about curriculum organization and lesson planning.
+
+In the coming years, I plan to help expand the workshop program at the winter AAS meeting through collaboration with the career [...] council and involvement in a possible new AAS division of astronomical software [??]. Future workshop programs will include introductory ``boot camps'' along side more advanced special topics in data analysis and visualization, database design, and implementing tests in scientific code.
+
+%I have also accidentally discovered a relatively unexplored channel for indirect public outreach through the internet: while trying to develop a better intuition for galaxy-like potentials, I created a simple JavaScript visualization of a disk of test particles orbiting in an axisymmetric, logarithmic halo (shown here: \url{http://viz.adrian.pw/galaxy}). While developing this tool, it never occurred to me that anyone outside of astronomy or physics might find it fun and interesting. About two weeks later, a friend from outside of the field sent me a link, saying that it was forwarded to him by his parents
 
 \bibliographystyle{apj}
 \bibliography{refs}
