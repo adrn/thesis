@@ -10,7 +10,7 @@
 % Past grads who used the Columbia document:
 % Munier Salem, Yuan Li, Lia Corrales, Destry Saul, Jenna Lemonias, Takamitsu Tanaka, Emily Rauscher, David Spiegel, ......dinosaurs?
 %
-
+% Formatting guidelines: http://gsas.columbia.edu/content/formatting-guidelines
 
 % Use the first of the following lines during production to
 % easily spot "overfull boxes" in the output. Use the second
@@ -47,16 +47,19 @@
 	\setcounter{page}{1}
 	\addtocounter{page}{-1}	
 	\tableofcontents
+	
+	\newpage\addcontentsline{toc}{chapter}{List of Figures}
 	\listoffigures
 	%\input{intentionallyblank}
+	
+	\newpage\addcontentsline{toc}{chapter}{List of Tables}
 	\listoftables
 	%\input{intentionallyblank}
-	{ 
-		%\cleardoublepage
-		\addcontentsline{toc}{chapter}{Acknowledgements}
-		\input{acknowledge}
-		%\cleardoublepage
-	}
+	
+	\section*{Acknowledgements}
+	\addcontentsline{toc}{chapter}{Acknowledgements}
+	\input{acknowledge}
+	\newpage
 }
 
 % Main body and all other pages: Arabic numerals beginning with "1" centered at the bottom of each page
