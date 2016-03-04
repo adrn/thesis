@@ -1,0 +1,102 @@
+% -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+%
+% Adrian M. Price-Whelan
+%
+% PhD Dissertation
+%
+% Current version : March 2016
+%
+% Past grads who used this:
+% Munier Salem, Yuan Li, Lia Corrales, Destry Saul, Jenna Lemonias, Takamitsu Tanaka, Emily Rauscher, David Spiegel, ......dinosaurs?
+%
+% -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+\documentclass[twopage,letterpaper,12pt]{book}
+%\documentclass[twoside,openright,letterpaper,12pt]{book}
+%%% change to openright,oneside for FINAL draft
+%%% (or twoside for soft cover?)
+\input{packages.tex}
+\usepackage{appendix}
+\usepackage{fancyhdr}
+\usepackage{booktabs,longtable}
+\usepackage{url}
+\bibliographystyle{apj}
+\bibpunct{(}{)}{;}{a}{}{,} % sets the punctuation style of references
+
+\input{textstylemacros} % sets the spacing, margins, etc.
+\input{../paper-helpers/preamble.tex}
+
+\begin{document}
+
+% Columbia wants no page numbers for the title, copyright, and abstract ...
+
+{\pagestyle{empty}
+\input{title}
+\input{copyright}
+\input{abstract}
+}
+\setlength{\baselineskip}{0.625 \baselineskip}
+
+{
+\pagestyle{plain}
+\pagenumbering{roman}
+\setcounter{page}{1}
+\addtocounter{page}{-2}
+\parskip=0.15cm
+%\input{intentionallyblank}
+%\input{intentionallyblank}
+\tableofcontents
+
+%\input{intentionallyblank}
+\listoffigures
+\input{intentionallyblank}
+%\input{intentionallyblank}   % Yuan added this
+\listoftables
+\input{intentionallyblank}
+%  \cleardoublepage
+
+%\setlength{\baselineskip}{1.6 \baselineskip}
+%\input{acknow}
+%  \cleardoublepage
+
+\setlength{\baselineskip}{1.6 \baselineskip}
+
+
+{ \cleardoublepage
+\addcontentsline{toc}{chapter}{Acknowledgements}
+  \input{acknowledge}
+  \cleardoublepage
+}}
+
+% ... and arabic numerals at the top right corner for the rest of the
+% dissertation. Setting the "twoside" option in documentclass will put the
+% arabic numerals in the top outside corner.
+
+%\pagestyle{myheadings}
+\pagestyle{plain}   % Yuan changed this following Jenna's suggestion.
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\setlength{\baselineskip}{1.6 \baselineskip}
+%\setlength{\topmargin}{0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0.75in}
+
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername\  \thechapter: \ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection: \ #1}{}}
+%\input{ch0_introduction}
+\input{ch1_rewinder1}
+%\input{ch2_rewinder2}
+%\input{ch3_morphology}
+%\input{ch4_ophiuchus}
+%'\input{ch5_conclusion}
+%\cleardoublepage
+
+\setlength{\baselineskip}{0.625 \baselineskip}
+
+\markboth{Bibliography}{Bibliography}
+
+\bibliography{refs/ch1}
+% \bibliography{ref0,ref1,ref2,ref3,ref4}
+
+\end{document}
