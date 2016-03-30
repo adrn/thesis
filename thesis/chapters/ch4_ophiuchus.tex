@@ -1,11 +1,11 @@
 \chapter[Chaotic fanning of the Ophiuchus stream]{Chaotic fanning of the Ophiuchus stream}
 \label{ch:chaos-ophiuchus}
-\footnotetext{This section is a reformatted version of an article by the same name by \todo{Munier Salem \& Greg Bryan that can be found in Monthly Notices of the Royal Astronomical Society, Volume 437, Issue 4, pp. 3312-3330 (2014).} \todo{eh? Portions of this paper's introduction now appear in the introduction to this dissertation and the abstract for this paper is reproduced in Chapter~\ref{ch:conclusion}.}}
+% \let\thefootnote\relax\footnotetext{This section contains text from an article published in XXX. Portions of this paper's introduction now appear in the introduction to this dissertation.}
 
 % TODO: do I need \usepackage[caption=false]{subfig}?
 % \usepackage{multirow}
 
-\todo{This will change after referee response...}
+% TODO this could change after referee response...
 
 \newcommand{\lyapexp}{\lambda_{\rm max}}
 \newcommand{\lyapt}{t_\lambda}
@@ -89,7 +89,6 @@ Our goal is to (1) assess whether the Galactic bar can produce chaotic orbits in
 Throughout we assume the Sun is at Galactocentric position $(x,y,z) = (-8.3,0,0)~{\rm kpc}$ \citep[e.g.,][]{schoenrich12} with velocity $(v_x,v_y,v_z) = (-11.1, 250, 7.25)~\kms$ \citep[e.g.,][]{schoenrich10, schoenrich12}.
 
 \subsection{Potential models}\label{sec:potential}
-
 To integrate orbits and to compute chaos indicators we must choose a gravitational potential model to represent the potential of the Milky Way. The key feature of the potential that we would like to capture is the time-dependence and triaxiality of the Galactic bar. Recent work has used stellar number counts of Red Clump giant stars in the Galactic bulge to constrain dynamical models of the bar \citep{portail15}. Measurements of the total mass of the bar feature from this study are largely consistent with past work \citep[e.g.,][]{wang12}, however the measured pattern speed and present bar angle are significantly discrepant and this difference is not fully understood. We construct a parametrized potential model consisting of a triaxial, time-dependent (rotating) bulge component added to simple models for the disk and halo of the Milky Way. We describe below how we fix the parameters of the disk, halo, and bar or bulge component, but explore different choices for the time-dependence and orientation of the bar. We also define a static potential with a spherical bulge for comparison. 
 
 These potential models are meant to be representative rather than definitive. The uncertainty in the Milky Way potential within Galactocentric radii of $r\lesssim 4~{\rm kpc}$ and outside of $r\gtrsim 15~{\rm kpc}$ are large enough that trying to match the exact density distribution of the Ophiuchus stream is not a useful exercise. Instead, we consider qualitatively different potentials that allow us to isolate and study the affect of chaotic stream-fanning of tidal debris in the vicinity of the stream. 
@@ -195,7 +194,7 @@ Figure~\ref{fig:orbitfits} summarizes our results from fitting orbits to the BHB
 For the posterior samples in each potential, we also compute the maximum Lyapunov exponent (MLE, $\lyapexp$) and corresponding Lyapunov \emph{time} ($\lyapt = 1/\lyapexp$) to assess whether each orbit is chaotic. For strongly chaotic orbits, the Lyapunov time is still an appropriate indicator of chaos and of the timescale over which chaos is important for tidal debris \citep{apw15-chaos}. Figure~\ref{fig:lyapunov-hist} shows distributions of Lyapunov times for orbits drawn from the posterior distributions from orbit fitting in each potential model. All orbits in the static potential have Lyapunov times $\lyapt > 20~{\rm Gyr}$ and we consider them to be regular (no panel is shown for these orbits). All orbits sampled from each barred potential are strongly chaotic with Lyapunov times that range from $\lyapt \approx 400$--$1100~{\rm Myr}$. It is clear from these panels that the orbits around Ophiuchus are generally more strongly chaotic (have lower Lyapunov times) for larger pattern speeds. 
 
 % ---------------------------------------------------------------------------------
-\begin{figure}[!tbp]
+\begin{figure}[!th]
 \begin{center}
 %\includegraphics[width=0.5\textwidth]{figures/orbit-yz}
 \includegraphics[width=\textwidth]{figures/ch4/orbit-yz}
@@ -207,7 +206,7 @@ For the posterior samples in each potential, we also compute the maximum Lyapuno
 The orbits sampled from the orbit-fit posteriors in the barred potentials are all strongly chaotic. We have tried computing the frequency diffusion rate for these orbits as an independent check of their chaotic timescale but have found that, over consecutive integration windows, the frequency recovery fails or is unreliable because the frequency spectrum changes dramatically over timescales of $\approx$10--20 orbital periods. 
 
 % ---------------------------------------------------------------------------------
-\begin{figure}[!tbp]
+\begin{figure}[!th]
 \begin{center}
 %\includegraphics[width=0.5\textwidth]{figures/lyapunov-hist}
 \includegraphics[width=\textwidth]{figures/ch4/lyapunov-hist}

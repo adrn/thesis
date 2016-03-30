@@ -1,6 +1,6 @@
 \chapter[Inferring the gravitational potential of the Milky Way with a few precisely measured stars]{Inferring the gravitational potential of the Milky Way with a few precisely measured stars}
 \label{ch:rewinder2}
-\footnotetext{This section is a reformatted version of an article by the same name by \todo{Munier Salem \& Greg Bryan that can be found in Monthly Notices of the Royal Astronomical Society, Volume 437, Issue 4, pp. 3312-3330 (2014).} \todo{eh? Portions of this paper's introduction now appear in the introduction to this dissertation and the abstract for this paper is reproduced in Chapter~\ref{ch:conclusion}.}}
+\let\thefootnote\relax\footnotetext{This section contains text from an article published in The Astrophysical Journal, Volume 794, Issue 1, article id. 4, 15 pp. (2014). Portions of this paper's introduction now appear in the introduction to this dissertation.}
 
 % More definitions for this chapter
 \newcommand{\D}{{\bf D}}
@@ -152,7 +152,8 @@ The total potential then is just
 \begin{equation}
 	\Phi_{\rm tot} = \Phi_{\rm disk} + \Phi_{\rm spher} + \Phi_{\rm halo}\label{eq:lm10}.
 \end{equation}
-\begin{figure*}[!ht]
+
+\begin{figure*}[!t]
 \begin{center}
 \includegraphics[width=\textwidth]{figures/ch2/potentials.pdf}
 \caption{ Equipotential contours for the LM10 potential (Eq.~\ref{eq:lm10}) in Galactocentric, cartesian coordinates for various halo parameter choices. For all panels, $\vhalo=121.858~\mathrm{km}/\mathrm{s}$, $\rhalo=12~\mathrm{kpc}$, and $q_2=1$. Left to right, each column represents a new choice of parameters. If not specified, other parameters are fixed to $q_1=q_z=1$ and $\phi=0^\circ$ (far left panels). Panels on far right show the best-fit parameter values from LM10. }\label{fig:potential}
@@ -161,7 +162,7 @@ The total potential then is just
 
 We use this potential not because we think it is a realistic representation of the Galactic potential, but because successful inference with this potential demonstrates that it is possible to recover information about non-trivial potential forms. Figure~\ref{fig:potential} shows equipotential slices in the Galactic X-Z plane (Y=0) and Y-Z plane (X=0) for a few choices of  $q_1$,  $q_z$, and $\phi$ while holding all other parameters fixed, as described in the figure caption. The potential parameters used for the simulations are shown in the ``Truth'' column of Table~\ref{tbl:params}.
 
-\begin{figure*}[!ht]
+\begin{figure*}[!t]
 \begin{center}
 \includegraphics[width=\textwidth]{figures/ch2/simulated_streams.pdf}
 \caption{ Particle positions (grey dots) in Galactocentric cartesian coordinates from the final time-step of four N-body simulations (Section~\ref{sec:sims}) with the same progenitor orbit initial conditions over a range of progenitor masses (columns). Black crosses indicate eight particles chosen from each mass simulation and used in the experiments described in Section~\ref{sec:experiments}.}\label{fig:sims}
@@ -197,16 +198,16 @@ In a triaxial potential, the orbital plane of the satellite is not fixed but we 
 	\hat{\bs{x}}_2 &= \frac{\bs{L} \times \hat{\bs{x}}_1}{\|\bs{L} \times \hat{\bs{x}}_1\|}\\
 	\hat{\bs{x}}_3 &= \hat{\bs{L}} = \frac{\bs{L}}{\|\bs{L}\|} = \frac{\bs{r}_p \times \bs{v}_p}{\|\bs{r}_p \times \bs{v}_p\|}\label{eq:x3}.
 \end{align}
-\begin{figure}[p]
+\begin{figure}[t!]
 \begin{center}
-\includegraphics[width=\textwidth]{figures/ch2/Lpts_r.pdf}
+\includegraphics[width=0.9\textwidth]{figures/ch2/Lpts_r.pdf}
 \caption{ Orbits of 2000 randomly-drawn, disrupted particles projected into the instantaneous orbital plane coordinates (Eqs.~\ref{eq:x1}-\ref{eq:x3}), normalized by the tidal radius (Eq.~\ref{eq:tidalradius}), and only shown within half a satellite crossing time around $t=\tub$ for each of the four progenitor masses. The orbits were integrated backwards from their present-day positions (final time step of the N-body simulations) as test particles without the potential of the progenitor. Horizontal black line shows $x_2=0$ (top panels) and $x_3=0$ (bottom panels), and the unit circle (black circle) illustrates the classical disruption radius in these coordinates. }\label{fig:lpts_r}
 \end{center}
 \end{figure}
 Figure~\ref{fig:lpts_r} shows sections of particle orbits (for particles that are stripped) from the N-body simulations described above, projected into this coordinate system. The positions are normalized by the instantaneous tidal radius (Eq.~\ref{eq:tidalradius}) and velocities are normalized by the instantaneous velocity scale (Eq.~\ref{eq:velscale}). Sections of the orbits symmetric around their unbinding times, $\tub$, are shown for each of the four progenitor masses. In these coordinates, the classical Lagrange points would be located at $x_1\approx\pm\rtide,x_2=0,x_3=0$ (illustrated by the intersection of the black unit circles and horizontal lines in Figure~\ref{fig:lpts_r}). Though not exactly centered on the point-mass Lagrange points derived for a circular orbit, the location of and dispersion about the effective Lagrange points in these scaled coordinates remain remarkably consistent across the range of progenitor masses explored. Figure~\ref{fig:lpts_v} shows the velocity orbits of each star also projected into these coordinates and normalized. The dispersion in velocity is well-normalized by the velocity scale of Eq.~\ref{eq:velscale}, though it is clear that the velocity dispersion along $\hat{x}_1$, the radial vector to the satellite position, is larger than that in other dimensions, possibly because of mild tidal shocking. 
-\begin{figure}[ph]
+\begin{figure}[t!]
 \begin{center}
-\includegraphics[width=\textwidth]{figures/ch2/Lpts_v.pdf}
+\includegraphics[width=0.9\textwidth]{figures/ch2/Lpts_v.pdf}
 \caption{ Same as Figure~\ref{fig:lpts_r} but for particle velocities normalized by the velocity scale (Eq.~\ref{eq:velscale}). }\label{fig:lpts_v}
 \end{center}
 \end{figure}
