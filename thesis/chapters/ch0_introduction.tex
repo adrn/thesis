@@ -3,7 +3,11 @@
 
 \noindent{\bf  A few paragraphs to start -- very general, low-level intro to astronomy?}
 
+State up front: goal is to develop methods to understand global Galactic potential to connect to cosmological predictions.
+
 The most common unit of length in this thesis is the kiloparsec (kpc) -- meter stick for galaxies like the milky way. $1~\kpc \approx 3300~{\rm light years}$.
+
+This work deals with the dynamics of structures in the outer regions of the Milky Way --- first summarize what we know about the structure of the Galaxy....
 
 The work in this \article\ attempts to connect the Milky Way to our cosmological environment ... \footnote{It is somewhat amusing that the majority of the research presented in this \article\ was conducted from New York city, where the surface brightness of the Milky Way is several magnitudes fainter than the light pollution levels.}
 
@@ -15,6 +19,8 @@ Though fundamental aspects of its formation are still not understood\footnote{Fo
 
 \subsection{Disk}
 
+\todo{work in sentence about orbital periods -- number of orbits since formation?}
+
 The most massive baryonic component of the Milky Way is its disk. The baryonic mass in the \mwdisk\ \citep[$M_d \approx 5 \times 10^{10}~\msun$;][]{mcmillan11, todo} is dominated by stars which have an approximately exponential density profile in both the radial and vertical directions \citep[with scale lengths of $\approx$2--3 kpc and $\approx$200--400 pc, respectively; ][]{mcmillan11, bovy12-spatialMAP, todo}\footnote{Though these numbers depend strongly on the age of the stellar population being fit.}. There is an appreciable amount of  gas, the majority of which is present in a clumpy disk of neutral Hydrogen, HI \citep[$M_{\rm HI} \approx 8 \times 10^9~\msun$;][]{kalberla09} with a larger radial scale length ($\approx$3--4 kpc) and radially increasing scale height \citep[$\approx$100 pc at $R=8~\kpc$ to $\approx$1 kpc at $R=25~\kpc$;][]{wouterloot90, merrifield92}. However, outside of $R \gtrsim 12.5~\kpc$ the gas disk is warped up to $\approx$5 kpc away from the stellar midplane. 
 
 Within $R\approx 12~\kpc$, the HI and younger, more metal-rich stars orbit the Galaxy on approximately circular orbits with circular velocities $v_c \approx 220~\kms$, velocity dispersions $\sigma_v \approx 25~\kms \ll v_c$, and relatively small vertical excursions. Older and more metal-poor stars tend to have larger velocity dispersions and larger scale-heights. These sub-components of the \mwdisk\ are commonly referred to as the ``thin'' and ``thick'' \mwdisk s, respectively \citep{todo}, though more recent work that has instead argued that the disk is more naturally decomposed into \emph{mono-abundance populations} that form a continuum of spatially super-imposed populations from younger, alpha-poor, and vertically compact to older, alpha-enhanced, and vertically extended \citep[see, e.g., Figure~12 and Section~6 in][]{rixbovy13}. Classically, the thin \mwdisk\ was believed to truncate around $R \approx 12~\kpc$ \citep{todo}, but recent studies of the outer disk suggest that \mwdisk\ may extend farther and oscillate above and below the projected midplane measured in the inner Galaxy \citep{xu15, apw15-triand}. There could therefore be a significant number of \mwdisk\ stars at $15~\kpc \lesssim R \lesssim 40~\kpc$ with heights $|z| \gtrsim 1~\kpc$, but it is unclear how this connects to the midplane of the disk because of foreground dust extinction. In comparison, gas associated with the HI disk has been detected out to Galactocentric radii $R \approx 60~\kpc$ \citep{kalberla08}.
@@ -23,51 +29,59 @@ In the opposite direction---towards the inner Galaxy---dust extinction severely 
 
 \subsection{Bulge \& Bar}
 
-The Milky Way \mwbulge---like those seen in external galaxies---is characterized by its predominantly old, metal-rich stellar population \citep[ages of XX, typical Fe/H;][]{todo}, its smaller physical size \citep[$R \lesssim 1$--$2~\kpc$;][]{todo}, and its large velocity dispersions relative to the \mwdisk\ \citep[$\sigma_v \sim 100~\kms$;][]{todo}. Bulges are typically classified as being either more spherical, ``classical'' bulges or the more common disky, rotating, ``pseudo-bulges'' that appear to associated with (or relics of) bar formation and growth. There has long been evidence from XX and anomalous neutral gas motions near the Galactic center that the \mwbulge\ is a pseudobulge \citep{blitz91, weiland94, binney97} and that there is likely a barred structure in the central Milky Way \citep{binney91}. 
+\todo{work in sentence about orbital periods -- number of orbits since formation?}
 
-Recent work has developed a convincing and complete picture of the barred \mwbulge: what has been attributed to the cylindrically-rotating, ``boxy/peanut'' \mwbulge\ is likely the inner component of a much larger bar that could extend up to 5 kpc from the Galactic center \citep{wegg13, todo}. Figure~XX shows the stellar density of the inner bar component inferred from the distribution of nearly 10 million red clump giant stars (RCGs) in the central Milky Way.\footnote{RCGs are evolved, helium-burning giant stars that have a small scatter in absolute magnitude and are therefore useful distance indicators.} The inner bar component is triaxial with scale lengths $(h_R, h_?, h_z) \approx (XX,XX,XX)~\kpc$, whereas the long bar component extends out to $R\approx 5~\kpc$ and is much flatter with scale lengths
+The Milky Way \mwbulge---like those seen in external galaxies---is characterized by its predominantly old, metal-rich stellar population \citep[$t_{\rm age} \approx 10~{\rm Gyr}$, typical todo $Fe/H \approx XX$--$YY$;][]{todo}, its smaller physical size \citep[$R \lesssim 1$--$2~\kpc$;][]{todo}, and its large velocity dispersions relative to the \mwdisk\ \citep[$\sigma_v \sim 100~\kms$;][]{todo}. There has long been evidence from, e.g., its boxy shape and from anomalous neutral gas motions near the Galactic center that the \mwbulge\ is a ``pseudobulge'' rather than a spherical ``classical'' bulge, and that there is likely a barred structure in the central Galaxy \citep{blitz91, binney91, weiland94, binney97}. 
+
+Recent work has developed a convincing and complete picture of the barred \mwbulge. What is typically attributed to the cylindrically-rotating, boxy \mwbulge\ ($R \lesssim 2~\kpc$) is likely the inner component of a much longer bar that could extend up to 5 kpc from the Galactic center \citep{wegg13, todo}. The extension of the boxy \mwbulge\ into the disk is referred to as the ``long bar'' and is thinner in both vertical height and along the line of sight. Young, thin disk stars do extend farther inwards and appear to form a barred thin parallel to but vertically compact relative to the boxy bulge \citep{dekany15 todo}. Figure~XX shows the stellar density of \todo{XXX} inferred from the distribution of nearly 10 million red clump giant stars (RCGs) in the central Milky Way.\footnote{RCGs are evolved, helium-burning giant stars that have a small scatter in absolute magnitude and are therefore useful distance indicators.} The inner bar component is triaxial with exponential scale lengths $(h_x, h_y, h_z) = (0.70, 0.44, 0.18)~\kpc$, whereas the long bar component extends out to $R\approx 5~\kpc$ and is much flatter with scale lengths $(h_x, h_y, h_z) \approx (xxxxxxx)~\kpc$ \citep{wegg13}. 
+
+The total mass in the \mwbulge\ is measured to be $M_b \approx 1.5$--$3 \times 10^{10}~\msun$ from both stellar population modeling \citep{dwek95, valenti15} and dynamical mass measurements \citep{zhao94, portail15}; the long bar contains $\approx$10\% of this mass \citep{wegg15}. These models are consistent with the existence of an additional classical (spherical) component that could account for up to $\lesssim 25\%$ of the bulge mass. Though observational constraints on a classical bulge component are difficult because of dust extinction, there is some indication of more a spherical stellar distribution that is chemically distinct from the barred population \citep{ness13a,ness13b, todo}.
+
+The mass of the barred \mwbulge\ is fairly well constrained, however, its kinematic properties are not well known. Bars are generally assumed to rotate like solid bodies\footnote{Otherwise they would not be so numerous and prominent in disk galaxies.} and can therefore be characterized by their pattern speed, $\Omega_b$. For the \mwbulge, an additional kinematic quantity is the present-day angle of the bar relative to the sun-Galactic center axis, $\phi_b$. Many different methods have been applied to inferring the pattern speed and bar angle and are largely inconsistent, however it is generally believed that $25 < \Omega_b < 60 \kmskpc$ and $20^\circ < \phi_b < 30^\circ$ \citep{dwek95, stanek97, debattista02, shen10, wegg13, cao13, wegg15, portail15}.
+
+\todo{Should I remove some stuff from intro to ophiuchus section because of this summary?}
 
 \subsection{Halo} 
 
-Gas -- Magellanic stream $10^9~\msun$, adds a lot of gas but how much to disk?
+The \mwhalo\ here refers to anything outside of the \mwdisk\ or \mwbulge\ that is still gravitationally bound to the Milky Way. This includes the gaseous \mwhalo, the stellar \mwhalo, and the dark matter \mwhalo. The stellar \mwhalo\ is the only of these three sub-components that is directly observable: the presence of the dark matter \mwhalo\ that dominates the total mass of the Galaxy on large scales \citep[$M_{\rm h:d} \approx 10^{12}~\msun$;][]{todo} is inferred indirectly, and the gaseous halo is low-density and has thus far been studied using absorption line features in background sources \citep{miller13}. The gaseous \mwhalo---though important for mediating inflows and outflows of gas to and from the \mwdisk---is likely unimportant for the orbits of halo stars \citep[$M_{\rm h:g} \approx 10^{10}~\msun$][]{blitz10, salem15} and will be largely ignored in this \article. 
 
-Finish talking about accretion of stuff and formation of structures, connecting to cosmology
+The stellar \mwhalo\ contains a tiny fraction of the baryons in the Galaxy \citep[$\approx$1\%][]{todo} but is of great importance for studying the global structure of the Milky Way and its history. First, \mwhalo\ stars orbit the Galaxy where dark matter dominates the mass profile. In the \mwdisk, it is difficult to measure the density of dark matter because it is degenerate with, e.g., the scale length and mass of the baryonic components \citep{todo many}. In the halo, the number of stellar tracers is smaller, but they therefore contribute little to the gravitational potential. Second, the dynamical times in the \mwhalo\ are long ($\approx$0.5--1 Gyr or longer) and much substructure has not had enough time to phase-mix away. In fact, a significant fraction \cirep[$\approx$40--50\%;][]{bell08} of the stellar halo is likely associated with substructure in the form of tidal streams and shells formed from disrupted or disrupting dwarf galaxies and, to a lesser extent, globular clusters. Third, ...
+
+The stellar \mwhalo\ is generally partitioned into two sub-components: the inner and outer halo. 
+
+- Inner (R < ??) is smoother, density profile follows r^Z
+- Outer (?? < R < ??) clumpier
+- Only makes sense to talk about inner / smooth component as random
+- Use jeans modeling or whatevah to measure mass profile, velocity dispersion profile, etc. -- how valid is this? cite paper from someone + KVJ on 20\% biases because of substructure
+
+- XX\% of stellar halo in Sag. stream, LMC on its way -- will eventually completely change halo
+- How many accreted things? See XX dwarf galaxies, XX globular clusters, XX streams
+- Modeling dynamically cold structures may require less assumptions - tighter constraints
+- This thesis ....
+
+-- "summary?"
+- Of course, the Galaxy is more than the sum of distinct components---each interact and influence the others---but it is useful to try to understand them independently before studying coupled phenomena. 
+- This is in part because the data are of sufficient quality that the Galaxy can no longer be viewed or modeled as a simple superposition of independent components (e.g., \mwdisk\ + \mwbulge\ + \mwhalo)
+- Census of all tidal debris structures + surviving satellites + disk, can hopefully study history of MW and learn about global structure
+- Better understanding of MW --> better understanding of galaxy formation + comparison to cosmology
 
 
 However, galaxy formation and evolution depends on many coupled, nonlinear processes: even with a wealth of information---kinematics and chemistry of XX of stars \citep{todo}---much is still unknown about fundamental properties of the Galaxy such as, for example, the number and locations of spiral arms in the \mwdisk, the pattern speed, mass, and size of the bar in the central Galaxy, and the three-dimensional shape and profile of the Milky Way's dark matter halo. 
 
-This is in part because the data are of sufficient quality that the Galaxy can no longer be viewed or modeled as a simple superposition of independent components (e.g., \mwdisk\ + \mwbulge\ + \mwhalo)
-
-[...] Simulations have shown that galaxy components are interdependent and [...] \citep{todo}
-
-In recent years, as computational [...] and statistical inference methods have improved substantially, 
-
-[Problems because galaxy treated as independent parts, try to explain independently -- inter-related -- shifting from studying each independently to now connection between all]
-
-[Transition to three subsections by saying galaxy can be roughly split into distinct components. In reality, can't be modeled independently, but makes sense to focus on each...?]
-
-
-Of course, the Galaxy is more than the sum of distinct components---each interact and influence the others---but it is useful to try to understand them independently before studying coupled phenomena. 
-
-
-
-% ----
-[Typical number of orbits / dynamical times in each component]
-
-Like the majority of stars in the Milky Way, the sun was formed in and continues to orbit within the disk of the Galaxy. Though the precise details of its formation are still unknown, it likely formed in an open cluster of $\approx$$10^3$ stars that quickly dissolved $\approx$5 billion years ago. At its present Galactocentric distance of $\approx$8 kpc, the sun completes one orbit around the Galaxy every $\approx$200--250 million years. The sun has only orbited the galaxy $\approx$20 times in stark comparison to the billions of orbits the Earth has completed around the sun. This illustrates an important detail in the study of galaxies: the dynamical times intrinsic to galaxies are significant relative to their ages.
+% Like the majority of stars in the Milky Way, the sun was formed in and continues to orbit within the disk of the Galaxy. Though the precise details of its formation are still unknown, it likely formed in an open cluster of $\approx$$10^3$ stars that quickly dissolved $\approx$5 billion years ago. At its present Galactocentric distance of $\approx$8 kpc, the sun completes one orbit around the Galaxy every $\approx$200--250 million years. The sun has only orbited the galaxy $\approx$20 times in stark comparison to the billions of orbits the Earth has completed around the sun. This illustrates an important detail in the study of galaxies: the dynamical times intrinsic to galaxies are significant relative to their ages.
 
 \begin{itemize}
-	\item Our place in the galaxy -- not too hot, not too cold
-	\item Components of the galaxy -- separate subsections for disk, bulge / bar, halo
-	\item Just one galaxy, but the one galaxy where we can measure precise kinematics for individual stars and have vast numbers of tracers
+	\item {\bf x} Our place in the galaxy -- not too hot, not too cold
+	\item {\bf x} Components of the galaxy -- separate subsections for disk, bulge / bar, halo
+	\item {\bf x} Just one galaxy, but the one galaxy where we can measure precise kinematics for individual stars and have vast numbers of tracers
 	\item Different ways to use stars in halo to measure mass, shape: random tracers (e.g., Jeans) vs. cold tracers (stream modeling)
-	\item Evidence for dark matter and tentative clues to its structure (e.g., lensing, and conclusions all over the place for MW halo shape from streams)
 	\item Can understand the MW to inform studies of galaxy evolution in general
 \end{itemize}
 
 \section{The Milky Way in context}\label{sec:milkyway-context}
 
 \begin{itemize}
+	\item Evidence for dark matter and tentative clues to its structure (e.g., lensing, and conclusions all over the place for MW halo shape from streams)
 	\item MW satellites, LMC/SMC, M31, Local group, etc.
 	\item MW is just one galaxy, and just one type of galaxy -- there are many different types of galaxies across a range of masses
 	\item Brief intro to cosmology and standard lore for galaxy formation and evolution
