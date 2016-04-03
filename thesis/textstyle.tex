@@ -26,6 +26,18 @@
 
 \bibpunct{(}{)}{;}{a}{}{,} % sets the punctuation style of references
 
+% Magic to add quote before chapter text
+\makeatletter
+%\renewcommand{\@chapapp}{}% Not necessary...
+\newenvironment{chapquote}[2][2em]
+  {\setlength{\@tempdima}{#1}%
+   \def\chapquote@author{#2}%
+   \parshape 1 \@tempdima \dimexpr\textwidth-2\@tempdima\relax%
+   \itshape}
+  {\par\normalfont\hfill--\ \chapquote@author\hspace*{\@tempdima}\par\bigskip}
+\makeatother
+
+
 % --- OLD ----
 %\paperwidth=8.5in
 %\paperheight=11in
