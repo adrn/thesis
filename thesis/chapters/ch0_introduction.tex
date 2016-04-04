@@ -1,4 +1,4 @@
-\chapter[Introduction]{Introduction} label{ch:intro}
+\chapter[Introduction]{Introduction} \label{ch:intro}
 
 % I have seen the dark universe yawning, Where the black planets roll without
 % aim; Where they roll in their horror unheeded, without knowledge or lustre or
@@ -383,6 +383,8 @@ stars associated with kinematic substructure in halo. Certain types of stars are
 better kinematic tracers because of their brightness and dependence on stellar
 population.
 
+\subsection{Stellar tracers}
+
 Main-sequence turnoff (MSTO) stars are the most numerous tracers that are useful
 for dynamical studies of the halo because they are found in all stellar
 populations. These stars form a horizontal feature in a Hertzsprung-Russell
@@ -404,6 +406,12 @@ distance errors they can't be used to resolve small-scale features. The \gaia\
 mission will measure parallaxes better than these values only out to $\approx$5
 kpc and $\approx$2 kpc, respectively.
 
+Horizontal branch (HB) stars are considerably less numerous than MSTO stars; a
+typical metal-poor globular cluster will contain a few to a few tens of HB stars
+but will contain thousands of MSTO stars. However, because of their luminosity
+($M_V \approx 0.5$) and significantly smaller distance uncertainties, these are
+extremely powerful tracers.
+
 Blue horizontal branch (BHB) stars are post-main-sequence stars that have
 evolved off of the red giant branch (RGB) and onto horizontal branch (HB), which
 has a small scatter in absolute magnitudes for a wide range of initial stellar
@@ -411,9 +419,10 @@ masses and metallicities ($\sigma_{\rm mag,BHB} \approx 0.15$). BHB stars
 typically have low metallicities $\feh \lesssim -1$, but the details of stellar
 evolution that lead to the formation of HB stars is still not well understood
 \citep{todo}. These stars are very useful for studying the halo because they are
-intrinsically bright and good distance indicators \cite[see, e.g.,][]{xue08,
-deason11}; outside of $\approx$4 kpc, \gaia\ parallaxes uncertainties will be
-worse than photometric distance measurements for BHB stars.
+intrinsically bright and good distance indicators \cite[$\sigma_{d}/d \approx
+10\%$; see, e.g.,][]{xue08, deason11}; outside of $\approx$4 kpc, \gaia\
+parallaxes uncertainties will be worse than photometric distance measurements
+for BHB stars.
 
 RR Lyrae (RRL) stars are also HB stars but lie in the region where the HB
 crosses the instability strip and are therefore pulsating variable stars. RRL
@@ -426,100 +435,61 @@ period-luminosity relation \citep[that is tightest in the mid-
 infrared;][]{madore12} that enables extremely precise distance measurements to
 individual stars \citep[$\approx$1--2\%;][]{klein14}. In existing surveys, these
 stars are seen out to $\approx$120 kpc \citep{sesar10} and have been used
-extensively to map the structure of the halo \citep[e.g.,][]{sesar13}.
+extensively to map the structure of the halo \citep[e.g.,][]{sesar13a}.
 
-Red clump (RC) stars form the metal-rich end of the HB and lie near the giant branch because these stars lose less of their envelopes before the core begins helium burning. Distance measure
+Red clump (RC) stars form the metal-rich end of the HB and lie near the giant
+branch because these stars lose less of their envelopes before the core begins
+helium burning. The instrinsic scatter in RC star distances is comparable to
+that of BHB stars so that distance measurements to individual stars have
+uncertainties $\sigma_{d}/d \approx 10\%$ \citep[e.g.,][]{bovy14-rc}.
 
-bovy14-rc
+An old stellar population will contain red giant stars that can be seen to
+extreme distances because of their large luminosities ($M_V \approx 1$--$-3$).
+Lower-metallicity giants will fall in the K spectral type (K giants) and high-
+metallicity giants will fall in the M spectral type (M giants). The Milky Way
+halo is dominated by K giants because the mean metallicity is so low, but there
+are still an appreciable number of M giants (many of which are associated with
+the Sagittarius debris system). The most luminous M giant stars are currently
+detected as far as $\approx$300 kpc into the halo enabling searches for distant
+Milky Way satellites and debris structures \citep{bochanski14}. K giants have
+been used to study the density profile of the inner $r \lesssim 80~\kpc$ of the
+halo \citep{xue15}, but discrimination between dwarf stars and giant stars at
+these spectral types is often difficult and can lead to significant
+contamination.
 
-HB stars (BHB, RRL, RC) are considerably less numerous than MSTO stars; a typical metal-poor globular cluster will contain a few to a few tens of HB stars but will contain thousands of MSTO stars. However, because of their luminosity and significantly smaller distance uncertainties, these are extremely powerful tracers.
+\subsection{Surveys past, present, and future}
 
-what tracers:
-- MSTO: most numerous, but faint. large spread in abs. mag.
-- BHB: bright HB stars. metallicity dependent, but trace low metallicity dwarfs. contamination with other blue stars
-- RRL: pulsating HB stars. metallicity dependent. easy to identify in time series because of light curve
-- Red clump: bright red giant stars. evolved, helium burning. after ascending RGB, get stuck?
-- K giants: TODO (Xue 14)
-- M giants: TODO
+Large-area, precise photometric surveys like the Sloan Digital Sky Survey
+\citep[SDSS;][]{york00} and Two Micron All Sky Survey
+\citep[2MASS][]{skrutskie06} have revolutionized our view of the \mwhalo\ and
+have enabled the discovery and characterization of the majority of the known
+tidal debris structures around the Milky Way. However, the vast majority of
+these structures have been discovered as over-densities in configuration-space
+alone (e.g., in distance and sky position). This is largely because the number
+of \mwhalo\ stars with radial velocity measurements is a factor of \todo{XX}
+smaller than the number of photometrically identified stars, and the number with
+proper motion measurements is even smaller. When tangential velocity
+measurements from the \project{Hipparcos} mission \citep{perryman97}---which
+measured proper motions and parallaxes to $\approx$$10^5$ stars in the solar
+neighborhood---were supplemented with radial velocities from the Geneva-
+Copenhagen survey \citep{todo}, a significant amount of velocity substructure
+was uncovered even in this small volume \citep[e.g.,][]{bovy09, minchev10}. The
+\gaia\ mission will provide this kind of revelation for the Milky Way \mwhalo.
 
-Hipparcos
-2MASS
-SDSS -- photometry then SEGUE and APOGEE
-RAVE
+The \gaia\ mission is currently measuring parallaxes, proper motions, and radial
+velocities for $\approx$$10^{8}$ stars in the Milky Way. At distances
+$\gtrsim$10 kpc in the \mwhalo, the radial velocity and parallax uncertainties
+will be large for all stellar types, but the proper motion uncertainties will
+still be useful for nearly $\approx$$10^{9}$ stars. Figure~\ref{XX} shows a
+summary of the expected distance and tangential velocity uncertainties for each
+of the stellar tracers reviewed in the previous section. \todo{explain figure
+more...}
 
-The \gaia\ mission will measure parallaxes, proper motions, and radial
-velocities for $\approx$$10^{8}$ stars. At distances $\gtrsim$10 kpc in the MW
-halo, the radial velocity and parallax uncertainties will be large for all
-stellar types, but the proper motion uncertainties will still be small for
-bright enough tracers. To measure  6D kinematics for stars at these distances it
-is therefore important to consider good distance indicators. RR Lyrae stars
-(RRLs) are bright, pulsating variable stars with a tight period-luminosity (PL)
-relation that enables precise distance measurements to individual stars
-\citep{klein14}. With photometry alone, distance uncertainties to these standard
-candles are typically 5--10\%. \gaia\ will measure proper motions to thousands
-of RRLs associated with known stellar streams with tangential velocity
-uncertainties $\lesssim$15 km s$^{-1}$ out to heliocentric distances of 30 kpc
-\citep{apw13}; the first data release containing astrometric measurements will
-be released in mid-2017 but will have larger uncertainties. From Pan-STARRS
-(PS1) photometry (data release expected early-2016), the photometric distances
-can be estimated to all RRLs in the PS1 footprint with uncertainties typically
-around $\approx$6\% \citep{sesar13b}. I am a member of the SMHASH project
-\citep{smashprop}, a \spitzer\ program to use the mid-IR PL relation for RRLs to
-measure precise distances to $\approx$150 stars in the Sagittarius (Sgr) and
-Orphan streams and will have access to these data in early 2016 to supplement
-the photometric distance data. This proposal directly addresses severe
-inadequacies of prior stellar stream modeling efforts in order to prepare for
-these data: Current methods (1) use simple and unrealistic analytic forms for
-the gravitational potential; (2) have only considered single streams,
-independently; and (3) have only used selective sub-sets of available data for
-modeling specific streams (e.g., the Sgr stream).
+[LSST stuff -- deep imaging -- RR Lyrae to virial radius]
 
-To supplement this data, I am Co-I for two Spitzer Space Telescope surveys to
-measure precise distances to RR Lyrae stars (RRLs) in the Sagittarius (Sag),
-Orphan, and Palomar 5 streams (\project{SMHASH}, Cycle 10, 10015, PI Johnston;
-\project{TRACSSS}, Cycle 12, 12076, PI Grillmair) using the mid-infrared period-
-luminosity relation for RRLs (Madore \& Freedman 2012). With distances, proper
-motions, and radial velocities, we will soon have $\approx$150 stars in three
-streams with full kinematic information.
-
-Future and ongoing surveys will revolutionize our knowledge about the outer disk
-and halo.
-
-\begin{itemize}
-    \item Surveys that will get kinematics for stars in the halo (ongoing and
-    future surveys)
-    \item Revolution in distance precision from tracers like RR Lyrae and
-    spectral methods (twins), revolution in transverse velocity (Gaia)
-    \item table summarizing different tracers and surveys? e.g., Kathryn's table
-    \item Types of substructure (shells, streams)
-\end{itemize}
+[Last piece: radial velocities]
+SEGUE, APOGEE, RAVE, GALAH, DESI?
 
 \section{Outline of thesis}
 
 \todo{stuff}
-
-% However, galaxy formation and evolution depends on many coupled, nonlinear
-% processes: even with a wealth of information---kinematics and chemistry of XX
-% of stars \citep{todo}---much is still unknown about fundamental properties of
-% the Galaxy such as, for example, the number and locations of spiral arms in
-% the \mwdisk, the pattern speed, mass, and size of the bar in the central
-% Galaxy, and the three-dimensional shape and profile of the Milky Way's dark
-% matter halo.
-
-% Like the majority of stars in the Milky Way, the sun was formed in and
-% continues to orbit within the disk of the Galaxy. Though the precise details
-% of its formation are still unknown, it likely formed in an open cluster of
-% $\approx$$10^3$ stars that quickly dissolved $\approx$5 billion years ago. At
-% its present Galactocentric distance of $\approx$8 kpc, the sun completes one
-% orbit around the Galaxy every $\approx$200--250 million years. The sun has
-% only orbited the galaxy $\approx$20 times in stark comparison to the billions
-% of orbits the Earth has completed around the sun. This illustrates an
-% important detail in the study of galaxies: the dynamical times intrinsic to
-% galaxies are significant relative to their ages.
-
-% Around Milky Way, can measure full kinematics for stellar streams, halo stars,
-% will provide a great way to test cosmological predictions. Can also study
-% structure around external galaxies via lensing or rotation curve, but limited
-% by tracers. Elliptical galaxies, can use globular clusters as tracers. But
-% still can't measure 3D positions and velocities. Lensing but only recover mass
-% profile in projection.
