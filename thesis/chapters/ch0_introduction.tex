@@ -75,16 +75,16 @@ lower-case these words refer to the components in general.
 In its global properties, the Milky Way is a fairly typical disk galaxy. It is,
 however, the one galaxy for which it is presently possible to measure detailed
 chemical abundances and full-space positions and velocities for large samples of
-individual stars (see Section~\ref{sec:surveys} for an overview of surveys that
-are measuring or will measure these chemo-dynamical quantities for stars in the
-outer Galaxy). This is of great interest to modeling the formation and evolution
-of the Galaxy: while a given star is born with a unique, frozen-in chemical
-``tag'' apparent in its surface chemical abundances, the kinematics of the star
-will evolve from its birth location (in phase-space) due to dynamical processes
-such as radial migration, mixing, and heating. By comparing the observed spatial
-structure, kinematics, and chemical abundance patterns of stars in the Galaxy
-with hydrodynamical simulations, it is therefore hoped that these will provide
-strong constraints on galaxy formation mechanisms.
+individual stars (see Section~\ref{sec:mw-surveys} for an overview of surveys
+that are measuring or will measure these chemo-dynamical quantities for stars in
+the outer Galaxy). This is of great interest to modeling the formation and
+evolution of the Galaxy: while a given star is born with a unique, frozen-in
+chemical ``tag'' apparent in its surface chemical abundances, the kinematics of
+the star will evolve from its birth location (in phase-space) due to dynamical
+processes such as radial migration, mixing, and heating. By comparing the
+observed spatial structure, kinematics, and chemical abundance patterns of stars
+in the Galaxy with hydrodynamical simulations, it is therefore hoped that these
+will provide strong constraints on galaxy formation mechanisms.
 
 Though many fundamental aspects of the formation of the Galaxy are still not
 understood\footnote{For example, were disk stars with large velocity dispersion
@@ -197,10 +197,13 @@ and are largely inconsistent, however it is generally believed that $25 <
 \Omega_b < 60 \kmskpc$ and $20^\circ < \phi_b < 30^\circ$ \citep{dwek95,
 stanek97, debattista02, shen10, wegg13, cao13, wegg15, portail15}.
 
+\todo{Formation of the bulge still not understood -- instability in disk?
+mergers? globular clusters?}
+
 \todo{Should I remove some stuff from intro to ophiuchus section because of this
 summary?}
 
-\subsection{Halo}label{sec:mw-halo}
+\subsection{Halo}\label{sec:mw-halo}
 
 The \mwhalo\ here refers to anything outside of the \mwdisk\ or \mwbulge\ that
 is still gravitationally bound to the Milky Way. This includes the gaseous
@@ -295,19 +298,7 @@ integrability of the potential (as is required by angle-action methods) and
 properly handles uncertainties or missing data in the kinematics of the
 individual stream stars.
 
-% \subsection{Summary}
-
-% The Milky Way is more than the sum of a few distinct components: the \mwdisk,
-% \mwbulge, and \mwhalo\ are coupled in highly nonlinear ways and each interact
-% and influence one another. Data from current and near-future surveys will
-% require and enable a more [...wide eyed] view of the Galaxy [us to view the
-% galaxy in sum to fully ... the information content in these surveys]. A better
-% understanding of the formation and evolution of the Milky Way will provide a
-% precise baseline by which to compare and study galaxy evolution more
-% generally. This will also enable critical tests of cosmological theories on
-% scales where
-
-\section{The Milky Way in context}label{sec:milkyway-context}
+\section{The Milky Way in context}\label{sec:mw-context}
 
 Though the composition of dark matter (DM) is still unknown, the large-scale
 properties of the universe are precisely characterized by the $\Lambda$ Cold
@@ -366,7 +357,7 @@ In addition to the satellite galaxies, there are a handful of massive tidal
 debris structures with no known progenitor systems: to highlight a
 few,\footnote{For a complete overview of all known tidal streams and stellar
 clouds, see Tables~1--2 in \cite{grillmair16}.} the Hercules-Aquila stellar
-cloud \citep{todo}, the Orphan stream \citep{newberg02}, and the Virgo over-
+cloud \citep{todo}, the Orphan stream \citep{grillmair06b}, and the Virgo over-
 density \citep{todo}.\footnote{Though its close association with the \mwdisk\
 may suggest that it is instead \mwdisk\ material perturbed away from the
 midplane rather than material from a destroyed satellite.} Finding and modeling
@@ -375,8 +366,18 @@ distribution, but also because many of these features were once satellite
 galaxies: to measure the accretion history and satellite population around the
 Milky Way, we will need to account for those that have already been destroyed.
 
-In addition to the [...] YY globular clusters and ZZ globular cluster streams.
-Streams could be used to detect dark subhalos...
+Along with the satellite galaxies and their remnants, the Milky Way hosts
+$\approx$160 globular clusters \citep{harris10}, many of which also display
+evidence for short tidal tails \citep{grillmair95, leon00}. The Galactic
+globular cluster system [can be split into inner, outer halo...]. [Typical
+masses $10^4$--$10^6~\msun$]. Tidal streams from globular clusters are
+dynamically much colder than those from dwarf galaxies. These systems have
+typical internal velocity dispersions around $\lesssim$1$~\kms$; globular
+cluster streams tend to remain thin, which makes them [...stand out] in filtered
+number-count maps of stars. $\approx$10 thin streams have been discovered that
+have no known progenitor clusters by visually inspecting maps of data from large
+photometric surveys like the Sloan Digital Sky Survey (SDSS) or Pan-STARRS
+\citep[e.g.,][]{grillmair06a, bonaca12, bernard14}.
 
 The Milky Way is just one galaxy, but given our vantage point on the \mwhalo\ it
 is a [...] opportunity to constrain cosmological models on small scales. The
@@ -385,16 +386,19 @@ halo and---with ongoing surveys such as the \gaia\ mission---it will be possible
 to measure full-space kinematics and detailed chemical abundances for individual
 stars in the halo.
 
-\section{Surveys of the Milky Way halo}label{sec:surveys}
+\section{Surveys of the Milky Way halo}\label{sec:mw-surveys}
 
 Future and ongoing surveys will revolutionize our knowledge about the outer disk
 and halo.
 
-\begin{itemize}     \item Surveys that will get kinematics for stars in the halo
-(ongoing and future surveys)     \item Revolution in distance precision from
-tracers like RR Lyrae and spectral methods (twins), revolution in transverse
-velocity (Gaia)     \item table summarizing different tracers and surveys? e.g.,
-Kathryn's table     \item Types of substructure (shells, streams) \end{itemize}
+\begin{itemize}
+    \item Surveys that will get kinematics for stars in the halo (ongoing and
+    future surveys)
+    \item Revolution in distance precision from tracers like RR Lyrae and
+    spectral methods (twins), revolution in transverse velocity (Gaia)
+    \item table summarizing different tracers and surveys? e.g., Kathryn's table
+    \item Types of substructure (shells, streams)
+\end{itemize}
 
 The \gaia\ mission will measure parallaxes, proper motions, and radial
 velocities for $\approx$$10^{8}$ stars. At distances $\gtrsim$10 kpc in the MW
