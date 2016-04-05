@@ -19,7 +19,8 @@
 % \documentclass[12pt,letterpaper]{report}
 \documentclass[twoside,12pt,letterpaper]{report}
 
-\newcommand{\thesistitle}{Stellar streams and stuff}
+\newcommand{\thesistitle}{Methods for inferring the structure of dark matter around
+the Milky Way with stellar streams}
 \newcommand{\thesisauthor}{Adrian Michael Price-Whelan}
 \newcommand{\graddate}{2016}
 
@@ -42,20 +43,20 @@
 {
 	\pagestyle{plain}
 	\pagenumbering{roman}
-	
+
 	% Skip second abstract page
 	\setcounter{page}{1}
-	\addtocounter{page}{-1}	
+	\addtocounter{page}{-1}
 	\tableofcontents
-	
+
 	\newpage\addcontentsline{toc}{chapter}{List of Figures}
 	\listoffigures
 	%\input{intentionallyblank}
-	
+
 	\newpage\addcontentsline{toc}{chapter}{List of Tables}
 	\listoftables
 	%\input{intentionallyblank}
-	
+
 	%\section*{Acknowledgements}
 	\addcontentsline{toc}{chapter}{Acknowledgements}
 	\input{acknowledge}
@@ -68,22 +69,22 @@
 	\pagestyle{plain}
 	\pagenumbering{arabic}
 	\setcounter{page}{1}
-	
+
 	\setlength{\headheight}{0in}
 	\setlength{\headsep}{0.5in}
-	
+
 	\renewcommand{\chaptermark}[1]{\markboth{\chaptername\  \thechapter: \ #1}{}}
 	\renewcommand{\sectionmark}[1]{\markright{\thesection: \ #1}{}}
-	
-	\input{chapters/ch0_introduction}
-	\input{chapters/ch1_rewinder1}
-	\input{chapters/ch2_rewinder2}
-	\input{chapters/ch3_morphology}
-	\input{chapters/ch4_ophiuchus}
-%	\input{chapters/ch5_conclusion}
-	
+
+	\input{chapters/ch1_introduction}
+	\input{chapters/ch2_rewinder1}
+	\input{chapters/ch3_rewinder2}
+%	\input{chapters/ch4_morphology}
+%	\input{chapters/ch5_ophiuchus}
+%	\input{chapters/ch6_conclusion}
+
 	%\cleardoublepage
-	
+
 	\markboth{Bibliography}{Bibliography}
 	\bibliography{refs/refs}
 }
