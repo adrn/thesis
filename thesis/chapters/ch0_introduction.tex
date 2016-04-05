@@ -464,10 +464,10 @@ Large-area, precise photometric surveys like the Sloan Digital Sky Survey
 \citep[SDSS;][]{york00} and Two Micron All Sky Survey
 \citep[2MASS;][]{skrutskie06} have revolutionized our view of the \mwhalo\ and
 have enabled the discovery and characterization of the majority of the known
-tidal debris structures around the Milky Way. However, the vast majority of
-these structures have been discovered as over-densities in configuration-space
-alone (e.g., in distance and sky position). This is largely because the number
-of \mwhalo\ stars with radial velocity measurements is a factor of \todo{XX}
+tidal debris structures around the Milky Way. The vast majority of these
+structures have been discovered as over-densities in configuration-space alone
+(e.g., in distance and sky position). This is largely because the number of
+\mwhalo\ stars with radial velocity measurements is a factor of $\approx$1000
 smaller than the number of photometrically identified stars, and the number with
 proper motion measurements is even smaller. When tangential velocity
 measurements from the \project{Hipparcos} mission \citep{perryman97}---which
@@ -487,19 +487,47 @@ Milky Way \mwhalo.
       \includegraphics[width=0.48\textwidth]{figures/ch0/vtan-err.pdf}
     }
 \caption{\todo{write this shite}}
-\label{fig:gaia-stellar-pops}
+\label{fig:gaiastellarpops}
 \end{figure}
 
 The \gaia\ mission is currently measuring parallaxes, proper motions, and radial
-velocities for $\approx$$10^{8}$ stars in the Milky Way. At distances
-$\gtrsim$10 kpc in the \mwhalo, the radial velocity and parallax uncertainties
-will be large for all stellar types, but the proper motion uncertainties will
-still be useful for nearly $\approx$$10^{9}$ stars. Figure~\ref{fig:gaia-
-stellar-pops} shows a summary of the expected distance and tangential velocity
-uncertainties for each of the stellar tracers reviewed in the previous section.
-\todo{explain figure more...} Of particular note are the RR Lyrae stars, [...].
+velocities for $\approx$$10^{8}$ stars in the Milky Way. The end-of-mission data
+release from \gaia\ (expected in 2022) will provide astrometric measurements for
+$\approx$$10^{9}$ stars. At distances $\gtrsim$10 kpc in the \mwhalo, the radial
+velocity and parallax uncertainties will be large for all stellar types, but the
+proper motion uncertainties will still be useful.
+Figure~\ref{fig:gaiastellarpops} shows a summary of the expected distance and
+tangential velocity uncertainties for each of the stellar tracers reviewed in
+the previous section. Of particular note are the RR Lyrae stars, which will have
+precise distance measurements and tangential velocity uncertainties
+$\lesssim$$10~\kms$ out to 25 kpc.
 
-[LSST stuff -- deep imaging -- RR Lyrae to virial radius]
+Another highly anticipated survey for Milky Way \mwhalo\ science is the Large
+Synoptic Survey Telescope \citep[LSST;][]{lsstsciencebook}. The telescope design
+and large mirror of the LSST will enable deep imaging over a huge field of view
+(magnitude limits of $\approx$24.5 for single-epoch images, $\approx$27.5 for
+coadded images). The LSST will image most of the visible sky in five filters
+every few nights, which will allow identification of faint time-variable stars
+like RR Lyrae stars at extreme distances (out to $\approx$2--3 times the virial
+radius of the Milky Way). At the faint end, the LSST will supercede the \gaia\
+astrometry and provide proper motions better than $\lesssim$$1~{\rm mas}~{\rm
+yr}^{-1}$ for stars with $r$-band magnitudes $20 \lesssim r \lesssim 24$. The
+survey will begin science operations in 2022 with the first data release
+expected about a year later.
+
+Much of the \mwhalo\ will be mapped in sky position, distance, and proper motion
+by the combination of \gaia\ and LSST; the last kinematic quantities needed are
+radial velocities. Unlike multi-object spectroscopy, imaging surveys do not
+scale in complexity with the number of sources. Robotic fiber-positioning
+spectrographs have made it possible to [...] but are expensive to maintain and
+don't scale above this number. Combined with the longer exposure times needed to
+obtain high signal-to-noise spectra, obtaining spectroscopy for a volume of
+stars comparable to the astrometric sources in \gaia\ will be an enormous
+technological challenge. However, it will be necessary in order to fully map out
+the chemical-abundance structure and measure radial velocities for these
+sources. Many ongoing efforts \citep[e.g.,][]{todo, apogee, galah, rave, ...}
+have obtained spectra for stars around the Galaxy. \todo{Future efforts like
+DESI ...}
 
 [Last piece: radial velocities]
 SEGUE, APOGEE, RAVE, GALAH, DESI?
