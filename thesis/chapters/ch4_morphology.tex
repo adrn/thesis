@@ -1396,8 +1396,9 @@ supported by National Science Foundation grant number ACI-1053575 \citep{xsede}.
 %\bibliographystyle{apj}
 %\bibliography{refs}
 
-% \appendix
-\appsection
+% appendix
+\setcounter{section}{0}%
+\renewcommand\thesection{\thechapter.\Alph{section}}
 \section{Lyapunov exponents} \label{sec:lyapapdx}
 
 % Using the definition of $w$ from Equation~\ref{eq:coords}, we can write
@@ -1576,3 +1577,4 @@ where the frequencies change with time.
 %\end{center}
 %\end{figure}
 
+\renewcommand\thesection{\thechapter.\arabic{section}}

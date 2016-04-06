@@ -230,9 +230,9 @@ exponential scale lengths along the three axes of the bar were adopted from
 potential parameter values are given in Table~\ref{tbl:potential-params-barred}.
 The mass of the halo is fixed and the mass of the disk and bar are varied in
 order to qualitatively reproduce the flatness and amplitude of the circular
-velocity curve of the Milky Way \citep{bovy12}. Figure~\ref{fig:potentials}, top
-left shows the circular velocity along the line connecting the Sun to the
-Galactic center in this model (the Galactic $x$ axis).
+velocity curve of the Milky Way \citep{bovy12-circvel}.
+Figure~\ref{fig:potentials}, top left shows the circular velocity along the line
+connecting the Sun to the Galactic center in this model (the Galactic $x$ axis).
 Figure~\ref{fig:potentials}, top right shows contours of constant surface
 density for a face-on (left) and edge-on (right) view of this potential model
 with the bar angle set to $20^\circ$ \citep[compare to, e.g., Figure 3
@@ -536,7 +536,7 @@ systematically higher for the model streams as compared to the observed stream.
 	potentials, all mean values are the same because the time-dependence of the
 	bar doesn't impact the orbit fit over the short length of the stream. We
 	have made samples from the full posterior distribution available with this
-	article and provide code to transform to and from stream coordinates (see
+	\article\ and provide code to transform to and from stream coordinates (see
 	http://adrian.pw/ophiuchus for more information).\label{tbl:param-means} }
 \end{center}
 \end{table*}
@@ -803,7 +803,10 @@ demonstrates that the stream is nearly aligned our viewing angle. }
 
 % ---------------------------------------------------------------------------------
 
-\appsection
+% TODO: appendix
+\setcounter{section}{0}%
+\renewcommand\thesection{\thechapter.\Alph{section}}
+
 \section{Transformation from Galactic to Ophiuchus stream coordinates} \label{sec:rotationmatrix}
 The transformation matrix is approximately represented as
 \begin{equation*}
@@ -931,3 +934,5 @@ The full expression for the posterior probability, $p(\bs{s}, \bs{w}_0, t_b, t_f
 \given \{\bs{x}_i\}, \{\bs{\sigma}_i\}, \Phi)$, is the joint likelihood
 (Equation~\ref{eq:likelihood}) multiplied by all priors described above
 (Equations~\ref{eq:prior1}--\ref{eq:prior2}).
+
+\renewcommand\thesection{\thechapter.\arabic{section}}
