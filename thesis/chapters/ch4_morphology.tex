@@ -1,5 +1,5 @@
 \chapter[Chaotic dispersal of tidal debris]{Chaotic dispersal of tidal debris \label{ch:chaos-morphology}}
-\let\thefootnote\relax\footnotetext{This section contains text from an article published in Monthly Notices of the Royal Astronomical Society, Volume 455, Issue 1, p.1079-1098 (2016). Portions of this paper's introduction now appear in the introduction to this dissertation.}
+\let\thefootnote\relax\footnotetext{This section contains text from an article published in Monthly Notices of the Royal Astronomical Society, Volume 455, Issue 1, p.1079-1098 (2016).}
 
 % More definitions for this chapter
 \newcommand{\chchchanges}[1]{#1}
@@ -7,6 +7,10 @@
 \newcommand{\periods}{\ensuremath{{\rm T}}}
 \newcommand{\act}{J}
 \newcommand{\jac}{\mathscr{J}}
+
+\newcommand\appsection{%
+  \setcounter{section}{0}%
+  \renewcommand\thesection{\thechapter.\Alph{section}}}
 
 
 %\begin{document}
@@ -155,7 +159,7 @@ streams. Understanding why this occurs and developing a measure to quantify the
 importance of this enhanced density evolution is a promising new direction to be
 explored further.
 
-In this \emph{Article}, we study the effect of chaotic diffusion of the
+In this \article, we study the effect of chaotic diffusion of the
 fundamental frequencies of individual orbits on the density evolution of tidal
 debris. We choose a simple, cosmologically motivated model for a triaxial
 potential, analyze the degree of chaos as computed from single-orbit diagnostics
@@ -171,7 +175,7 @@ chaos in galactic haloes and implies that the amount of chaos in a given
 potential may have significant consequences for the observability and
 survivability of thin, cold tidal streams.
 
-This paper is organized as follows. We review relevant nonlinear dynamics in
+This \article\ is organized as follows. We review relevant nonlinear dynamics in
 Section~\ref{sec:nldreview}. In Section~\ref{sec:methods}, we describe our
 choice of potential, method for numerical orbit integration, and introduce the
 chaos indicators used in this work. Our results are split into three
@@ -1375,7 +1379,7 @@ requiring that the progenitor orbits remain regular.
 The authors wish to thank Robyn Sanderson, Dan D'Orazio, David Merritt, and the
 \emph{Stream Team} for useful comments and discussion. \chchchanges{The authors
 additionally thank the referee, Walter Dehnen, for insightful comments that
-greatly improved this article.}
+greatly improved this \article.}
 
 APW is supported by a National Science Foundation Graduate Research Fellowship
 under Grant No.\ DGE 11-44155. KVJ and APW were partially supported by the
@@ -1397,8 +1401,8 @@ supported by National Science Foundation grant number ACI-1053575 \citep{xsede}.
 %\bibliographystyle{apj}
 %\bibliography{refs}
 
-% TODO: what do about appendix?
-%\appendix
+% \appendix
+\appsection
 \section{Lyapunov exponents} \label{sec:lyapapdx}
 
 % Using the definition of $w$ from Equation~\ref{eq:coords}, we can write
