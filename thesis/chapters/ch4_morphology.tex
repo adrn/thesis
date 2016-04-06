@@ -1,5 +1,4 @@
-\chapter[Chaotic dispersal of tidal debris]{Chaotic dispersal of tidal debris}
-\label{ch:chaos-morphology}
+\chapter[Chaotic dispersal of tidal debris]{Chaotic dispersal of tidal debris \label{ch:chaos-morphology}}
 \let\thefootnote\relax\footnotetext{This section contains text from an article published in Monthly Notices of the Royal Astronomical Society, Volume 455, Issue 1, p.1079-1098 (2016). Portions of this paper's introduction now appear in the introduction to this dissertation.}
 
 % More definitions for this chapter
@@ -106,13 +105,13 @@ galaxy potential it is hoped that we may infer the 3D mass distribution of the
 host. Many tidal streams are observed around the Milky Way, M31, and other
 nearby galaxies; the known streams span a large range of distances---from
 $\approx10$ to $100~{\rm kpc}$---and progenitor masses---from $\approx$10$^3$ to
-$\approx$10$^8~\msun$ in stellar mass---\citep[][]{ibata94,odenkirchen01,belokur
-ov06,grillmair06a,grillmair06b,bonaca12}. There has been extensive work on
-developing methods to use data from these streams to measure properties of the
-Milky Way's dark matter halo. These methods span a range of complexity from
+$\approx$10$^8~\msun$ in stellar mass---\citep[][]{ibata94,odenkirchen01,
+belokurov06,grillmair06a,grillmair06b,bonaca12}. There has been extensive work
+on developing methods to use data from these streams to measure properties of
+the Milky Way's dark matter halo. These methods span a range of complexity from
 orbit-fitting, to \emph{Streakline} \citep{kuepper12} or `particle-spray' models
 \citep{gibbons14}, to action-space density modeling \citep[e.g.,][]{sanders14,
-bovy14}, to N-body simulations \citep[e.g.,][]{law10}. All methods have been
+bovy14}, to $N$-body simulations \citep[e.g.,][]{law10}. All methods have been
 tested in some way on simulated observations of data and these tests typically
 demonstrate the recovery of parameters for analytic, static potential forms.
 
@@ -120,7 +119,7 @@ One example of stream modeling in a multi-component (static, analytic) potential
 was presented by \citet{pearson15}, who aimed to reproduce observations of the
 stellar stream density from the globular cluster Palomar 5 in a single oblate
 and single triaxial potential using \emph{Streakline} \citep{kuepper12} and
-N-body models. They used the observed number density of stream stars, a limited
+$N$-body models. They used the observed number density of stream stars, a limited
 number of radial velocities for stream members, and the sky position, distance,
 radial velocity, and proper motion of the cluster itself to fit model streams to
 the data. In the oblate potential (a three-component bulge+disk+spherical halo
@@ -447,7 +446,7 @@ strength of chaos for large grids of orbits.
 \subsection{Potential choice}\label{sec:potential}
 
 The density distributions within dark-matter haloes formed in cosmological
-N-body simulations are generically triaxial \citep[e.g.,][]{jing02, bett07,
+$N$-body simulations are generically triaxial \citep[e.g.,][]{jing02, bett07,
 zemp09, veraciro11}. With the inclusion of baryonic physics and sub-grid
 prescriptions for energy input due to supernovae and other feedback mechanisms,
 the inner potential ($\lesssim$$0.1R_{\rm vir}$ for a $\approx$$10^{12}~\msun$
@@ -461,7 +460,7 @@ bryan13, butsky15}. It is less clear what happens to the outer halo
 
 \citet[][hereafter JS02]{jing02} found that a triaxial generalization of the NFW
 density profile \citep{navarro96} generates excellent fits to the density
-distributions within haloes in their high-resolution (dark-matter-only) N-body
+distributions within haloes in their high-resolution (dark-matter-only) $N$-body
 simulations, and they provide probability distributions for the axis ratios of a
 large sample of these haloes. JS02 find median axis ratios of $c/a \approx 0.55$
 and $b/a \approx 0.77$ where $a$ is the major axis, $b$ the intermediate, and
@@ -796,7 +795,7 @@ the dispersion can be $\sim$10\%. In this section, we ask whether  the Lyapunov
 or frequency diffusion time predict the timescale over which a finite
 phase-space volume (e.g., tidal debris) stays coherent.
 
-It is computationally intractable to run full N-body simulations for the large
+It is computationally intractable to run full $N$-body simulations for the large
 grid of orbital initial conditions of the previous section and we therefore take
 a simplified approach for studying how finite-volume debris spreads along each
 of these orbits. We instead consider small ensembles of particles meant to
@@ -869,16 +868,16 @@ are shown in projection.}
 \includegraphics[width=0.8\textwidth]{figures/ch3/ensembles.pdf}
 \caption{Final particle positions after integrating unbound,
 globular-cluster-sized ensembles of orbits generated around each of the three
-N-body orbits (Figure~\ref{fig:nbodysims}). The ensembles each contain 1024
+$N$-body orbits (Figure~\ref{fig:nbodysims}). The ensembles each contain 1024
 particles and are initialized at pericenter. The particle positions
 qualitatively match the morphology of the `oldest' debris from the corresponding
-N-body simulations (Figure~\ref{fig:nbodysims}). }
+$N$-body simulations (Figure~\ref{fig:nbodysims}). }
 \label{fig:ensembles}
 \end{center}
 \end{figure}
 
 We verify that these orbit ensembles capture the nature of more realistic stream
-formation by running N-body simulations of globular-cluster-mass progenitor
+formation by running $N$-body simulations of globular-cluster-mass progenitor
 systems on these same four orbits. We use the Self-Consistent Field (SCF) basis
 function expansion code \citep{hernquist92} to run the simulations, which we set
 up to run from apocenter-to-apocenter (rather than pericenter-to-apocenter as in
@@ -888,7 +887,7 @@ Figure~\ref{fig:nbodysims} shows the final particle distributions rotated so
 that the angular momentum of the progenitor orbit is aligned with the $z$-axis.
 From a comparison of Figures~\ref{fig:ensembles} and \ref{fig:nbodysims}, it is
 clear that the morphology of the ensembles is visually similar to the `oldest'
-(first stripped) debris in the N-body simulations.
+(first stripped) debris in the $N$-body simulations.
 
 \begin{table*}[ht]
 \begin{center}
@@ -921,7 +920,7 @@ D & 0.85 & 0 & 1.434 & 0 & 0.597 & 0 & 8.14 & $\approx 2.5\times10^4$\\
 \begin{center}
 \includegraphics[width=0.8\textwidth]{figures/ch3/nbody.pdf}
 \caption{ We use the Self-Consistent Field (SCF) basis function expansion code
-\citep{hernquist92} to run N-body simulations of globular-cluster-mass
+\citep{hernquist92} to run $N$-body simulations of globular-cluster-mass
 progenitor systems on the three orbits of Figure~\ref{fig:ensembles}. The
 progenitor in each simulation is initialized as a $10^4$ particle Plummer sphere
 and the background triaxial NFW potential is turned on slowly over 250 Myr to
@@ -1259,7 +1258,7 @@ presence of and response to the Large and Small Magellanic Clouds may also
 introduce significant (time-dependent) perturbations to the global potential of
 the Milky Way \citep[e.g.,][]{besla10, gomez15}. In future work we will explore
 the effect of these time-dependent processes on the chaotic dispersal of tidal
-streams using live potentials from cosmological N-body simulations.
+streams using live potentials from cosmological $N$-body simulations.
 
 \item \emph{Substructure}: Cosmological simulations predict that dark-matter
 haloes are filled with substructure in the form of dark matter subhaloes. If
@@ -1293,14 +1292,14 @@ chaotic orbit evolution.
 
 \subsection{Ophiuchus stream}
 
-The Ophiuchus stream \citep{bernard14, sesar15} appears to be a thin, short
+The Ophiuchus stream \citep{bernard14, sesar15a} appears to be a thin, short
 tidal stream (deprojected length $\approx$1.5--2 kpc) near the Galactic bulge
 with no apparent progenitor. At Galactocentric $R \approx 1$ kpc, $z \approx 5$
 kpc, the orbits of the stream stars likely pass through the MW disk, feel the
 triaxiality of the Galactic bar \citep[e.g.,][]{wegg13, wegg15}, and have short
 orbital periods (relative to streams in the halo). It is possible that the
 observed debris is the last remnants of the recently disrupted progenitor system
-\citep{sesar15}, however if a significant number of stars were stripped on
+\citep{sesar15a}, however if a significant number of stars were stripped on
 previous pericentric passages, this older debris may be `fanned' and still near
 the observed portion of the stream. The fanned debris would have significantly
 lower surface brightness and thus would be more difficult to detect. The
@@ -1402,34 +1401,34 @@ supported by National Science Foundation grant number ACI-1053575 \citep{xsede}.
 %\appendix
 \section{Lyapunov exponents} \label{sec:lyapapdx}
 
-Using the definition of $w$ from Equation~\ref{eq:coords}, we can write
-Hamilton's equations as \footnote{A sum is implied with any repeated indices.}
-\begin{equation}
-	\dot{w}_i = \mathcal{J}_{ik}\,\frac{\partial H}{\partial w_k} \label{eq:ham}
-\end{equation}
-where $\mathcal{J}_{ik}$ is the $2N \times 2N$ canonical Poisson tensor (also
-called the symplectic matrix) defined by
-\begin{equation}
-	\mathcal{J}_{ik} = \left( \begin{array}{c:c} 0 & \ident \\ \hdashline -\ident & 0 \end{array} \right)
-\end{equation}
-with $N$-dimensional identity matrices $\ident$. We will consider a nearby
-phase-space position, $w_i'$, separated from $w_i$ by an infinitesimal
-deviation, $\delta w_i$, such that $w_i' = w_i + \delta w_i$. We can expand to
-linear order in the deviation about the parent orbit and write the equations of
-motion for the deviation as
-\begin{align}
-	\dot{\delta w_i} &= \mathcal{J}_{ik} \, \frac{\partial^2 H}{\partial w_k \partial w_m} \, \delta w_m =  \mathcal{J}_{ik}\, D_{km} \, \delta w_m \\
-    &= A_{im} \, \delta w_m
-\end{align}
-where $D_{km}$ is the Hessian matrix evaluated at the parent orbit. The general
-solution for this equation is
-\begin{equation}
-	\delta w_i(t) = B_{im}(t) \, \delta w_i(0)
-\end{equation}
-where $\delta w_i(0)$ are the initial conditions for the deviation vector and
-$B_{im}$ is the solution matrix. For chaotic orbits, the maximum eigenvalue of
-the solution matrix to Eq.~\ref{eq:deviate} is positive real, leading to
-exponential divergence of nearby orbits.
+% Using the definition of $w$ from Equation~\ref{eq:coords}, we can write
+% Hamilton's equations as \footnote{A sum is implied with any repeated indices.}
+% \begin{equation}
+% 	\dot{w}_i = \mathcal{J}_{ik}\,\frac{\partial H}{\partial w_k} \label{eq:ham}
+% \end{equation}
+% where $\mathcal{J}_{ik}$ is the $2N \times 2N$ canonical Poisson tensor (also
+% called the symplectic matrix) defined by
+% \begin{equation}
+%     \mathcal{J}_{ik} = \left( \begin{array}{c:c} 0 & \ident \\ \hdashline -\ident & 0 \end{array} \right)
+% \end{equation}
+% with $N$-dimensional identity matrices $\ident$. We will consider a nearby
+% phase-space position, $w_i'$, separated from $w_i$ by an infinitesimal
+% deviation, $\delta w_i$, such that $w_i' = w_i + \delta w_i$. We can expand to
+% linear order in the deviation about the parent orbit and write the equations of
+% motion for the deviation as
+% \begin{align}
+% 	\dot{\delta w_i} &= \mathcal{J}_{ik} \, \frac{\partial^2 H}{\partial w_k \partial w_m} \, \delta w_m =  \mathcal{J}_{ik}\, D_{km} \, \delta w_m \\
+%     &= A_{im} \, \delta w_m
+% \end{align}
+% where $D_{km}$ is the Hessian matrix evaluated at the parent orbit. The general
+% solution for this equation is
+% \begin{equation}
+% 	\delta w_i(t) = B_{im}(t) \, \delta w_i(0)
+% \end{equation}
+% where $\delta w_i(0)$ are the initial conditions for the deviation vector and
+% $B_{im}$ is the solution matrix. For chaotic orbits, the maximum eigenvalue of
+% the solution matrix to Eq.~\ref{eq:deviate} is positive real, leading to
+% exponential divergence of nearby orbits.
 
 If one is only interested in characterizing the degree of chaos, computing the full Lyapunov spectrum for an orbit is often not necessary. It is usually sufficient to compute an estimate of the maximum Lyapunov exponent by estimating the finite-time maximum Lyapunov exponent (FTMLE). Using the definition of $\boldsymbol{w}$ from Equation~\ref{eq:coords}, consider an orbit that is a small deviation away from the parent orbit, $\boldsymbol{w}' = \boldsymbol{w} + \delta\boldsymbol{w}$. If the parent orbit is chaotic, the norm of the infinitesimal deviation should grow exponentially with time with some characteristic rate, $\lambda$,
 \begin{equation}
