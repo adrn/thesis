@@ -63,13 +63,12 @@ galaxy.
 % Some of the most pertinent questions of our time are: What is the nature of
 % dark matter? How does the milky way fit in to cosmology / galaxy formation?]
 
-\todo{fill in this paragraph}
 In what follows, Galactocentric quantities are generally shown with no
 subscript, e.g., spherical radius $r$, cylindrical radius $R$. Heliocentric
-quantities use the [...] symbol in subscript---e.g., radial distance from the
-sun $r_\odot$. Capital, italicized galaxy components such as \mwdisk, \mwbulge,
-and \mwhalo\ refer to components of the Milky Way, whereas in lower-case these
-words refer to the components in general.
+quantities use the solar symbol, $\odot$, in subscript---e.g., radial distance
+from the sun $r_\odot$. Capital, italicized galaxy components such as \mwdisk,
+\mwbulge, and \mwhalo\ refer to components of the Milky Way, whereas in
+lower-case these words refer to the components in general.
 
 \section{The Milky Way} \label{sec:milkyway}
 
@@ -111,11 +110,11 @@ to $\approx$1 kpc at $R=25~\kpc$;][]{wouterloot90, merrifield92}. Outside of $R
 stellar midplane \citep{henderson82, kalberla07} and is a possible indication of
 a dynamical reaction to some external perturbation \citep[e.g.,][]{bekki12}.
 
-\todo{measure local density -- dark matter -- oort32,holmberg04, read13??}
+% \todo{measure local density -- dark matter -- oort32,holmberg04, read13??}
 
 Within $R\approx 12~\kpc$, the HI and younger, more metal-rich stars orbit the
-Galaxy on approximately circular orbits with circular velocities $v_c \approx
-220~\kms$, velocity dispersions $\sigma_v \approx 25~\kms \ll v_c$, and
+Galaxy on approximately circular orbits with stellar circular velocities $v_c
+\approx 220~\kms$, velocity dispersions $\sigma_v \approx 25~\kms \ll v_c$, and
 relatively small vertical excursions.\footnote{Stars in the thin disk have
 typical azimuthal orbital periods of $T_\phi \approx 200$--300 Myr. A typical
 star of the sun's age, $\approx$5 Gyr, has only completed $\approx$20 orbits
@@ -487,7 +486,18 @@ Milky Way \mwhalo.
     \subfloat{
       \includegraphics[width=0.48\textwidth]{figures/ch0/vtan-err.pdf}
     }
-\caption{Estimates for the astrometric precision of the end-of-mission data release from the \gaia\ mission for individual stars of different types. \textit{Left}: Fractional parallax or distance uncertainty for different stellar tracers as a function of distance. When the \gaia\ parallax uncertainty becomes larger than the distance uncertainty for an alternate distance measurement method, the minimum uncertainty is assumed. For example, for RR Lyrae (RRL) stars, distance measurements from the period-luminosity relation are $\approx$2\%. For other stars, photometric distance uncertainties range from $\approx$8--50\%. \text{Right}: Tangential velocity uncertainty using the fractional distance uncertainties in the left panel and the proper motion uncertainties from \gaia\ for a star with a tangential velocity $v_{\rm tan} = 100~\kms$.}
+\caption{Estimates for the astrometric precision of the end-of-mission data
+release from the \gaia\ mission for individual stars of different types.
+\textit{Left}: Fractional parallax or distance uncertainty for different stellar
+tracers as a function of distance. When the \gaia\ parallax uncertainty becomes
+larger than the distance uncertainty for an alternate distance measurement
+method, the minimum uncertainty is assumed. For example, for RR Lyrae (RRL)
+stars, distance measurements from the period-luminosity relation are
+$\approx$2\%. For other stars, photometric distance uncertainties range from
+$\approx$8--50\%. \text{Right}: Tangential velocity uncertainty using the
+fractional distance uncertainties in the left panel and the proper motion
+uncertainties from \gaia\ for a star with a tangential velocity $v_{\rm tan} =
+100~\kms$.}
 \label{fig:gaiastellarpops}
 \end{figure}
 
@@ -539,6 +549,57 @@ needed to have complete 6D phase-space coverage for the entire Milky Way halo.
 
 \section{Outline of thesis}
 
-Rich kinematic data impending, what can we learn about the dark matter halo of the Milky Way?
+This \article\ develops two new, complimentary approaches
+(Chapters~\ref{ch:rewinder1}--\ref{ch:rewinder2} and
+Chapters~\ref{ch:chaos-morphology}--\ref{ch:chaos-ophiuchus}) for studying the
+structure of matter around the Milky Way using stellar streams.
 
-\todo{stuff}
+Chapter~\ref{ch:rewinder1} introduces a new method---\rewinder---for measuring
+parameters of a gravitational potential by integrating orbits of the progenitor
+of and stars in a stellar stream backwards in time. This leverages the precise
+tangential velocity measurements expected for RR Lyrae stars from the \gaia\
+survey combined with accurate distances measured using the mid-infrared
+period-luminosity relation of RR Lyrae stars. The method is tested with
+synthetic observations of 100 stars from the end point of a simulation of
+satellite destruction and is shown to recover the shape, orientation, and mass
+scale of the input, true potential. This chapter has been published as
+\citep{apw13}.
+
+In Chapter~\ref{ch:rewinder2}, the concepts developed in
+Chapter~\ref{ch:rewinder1} are used to develop a likelihood function for the
+stellar streams so that the method can be used for statistical inference. With
+this critical update, \rewinder\ can properly account for finite observational
+uncertainties and missing data dimensions. \rewinder\ is tested on synthetic
+datasets generated from $N$-body simulations of satellite disruption in a
+static, multi-component Milky Way model with observational uncertainties chosen
+to mimic current and near-future surveys of various stars. With just a few
+stream stars and knowledge of the progenitor system kinematics, \rewinder\ can
+infer properties of a complex input potential with precisions of just a few
+percent. This chapter has been published as \citep{apw14}.
+
+Chapter~\ref{ch:chaos-morphology} examines the influence of chaos on the
+phase-space morphology of cold tidal streams and suggests a promising new
+direction for the use of tidal streams to constrain the distribution of dark
+matter around our Galaxy. We show that streams even in weakly chaotic regions
+look very different from those in regular regions and that streams can be
+sensitive to chaos on a much shorter time-scale than predicted from the Lyapunov
+or frequency-diffusion times. We describe how the enhanced diffusion of the
+stream stars can be understood by looking at the variance in orbital frequencies
+of orbit ensembles centered around the parent (progenitor) orbit. This chapter
+has been published as \citep{apw15-chaos}.
+
+In Chapter~\ref{ch:chaos-ophiuchus}, we study a particular stellar stream---the
+Ophiuchus stream---that is plausibly showing signs of chaotic ``stream-fanning''
+due to its proximity to the Galactic bar. We explore this hypothesis with models
+of stream formation along orbits consistent with the streams' properties in a
+Milky Way potential model that includes a rotating bar and find that in all
+choices for the rotation parameters of the bar, orbits fit to the stream are
+strongly chaotic. We show that these strongly chaotic orbits lead to simulated
+streams with properties that  qualitatively match the observed properties of the
+stream. We discuss how the existence of or lack of ``stream-fans'' around the
+Ophiuchus stream would provide interesting constraints on the properties of the
+Milky Way bar and would help distinguish between formation scenarios for the
+stream.
+
+Finally, in Chapter~\ref{ch:conclusion} we summarize our key results and
+describe several possible directions for future work.
