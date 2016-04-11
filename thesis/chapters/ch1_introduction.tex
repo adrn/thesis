@@ -74,18 +74,20 @@ lower-case these words refer to the components in general.
 
 In its global properties, the Milky Way is a fairly typical disk galaxy. It is,
 however, the one galaxy for which it is presently possible to measure detailed
-chemical abundances and full-space positions and velocities for large samples of
-individual stars (see Section~\ref{sec:mw-surveys} for an overview of surveys
+chemical abundances and 3D positions and velocities for large samples of
+individual stars: (see Section~\ref{sec:mw-surveys} for an overview of surveys
 that are measuring or will measure these chemo-dynamical quantities for stars in
-the outer Galaxy). This is of great interest to modeling the formation and
-evolution of the Galaxy: while a given star is born with a unique, frozen-in
-chemical ``tag'' apparent in its surface chemical abundances, the kinematics of
-the star will evolve from its birth location (in phase-space) due to dynamical
-processes such as radial migration, mixing, and heating. By comparing the
-observed spatial structure, kinematics, and chemical abundance patterns of stars
-in the Galaxy with hydrodynamical simulations, it is therefore hoped that these
-stellar parameters will provide strong constraints on galaxy formation
-mechanisms.
+the Galaxy). This is of great interest to modeling the formation and evolution
+of the Galaxy: while a given star is born with a unique, frozen-in chemical
+``tag'' apparent in its surface chemical abundances, the kinematics of the star
+will evolve from its birth location (in phase-space) due to dynamical processes
+such as radial migration, mixing, and heating. By comparing the observed spatial
+structure, kinematics, and chemical abundance patterns of stars in the Galaxy
+with hydrodynamical simulations, it is therefore hoped that these stellar
+parameters will provide strong constraints on galaxy formation mechanisms. The
+Milky Way plays a key role in this goal: unlike other galaxies where it is only
+possible to measure integrated properties, it is possible to directly measure
+the distribution function of the Milky Way.
 
 Though many fundamental aspects of the formation of the Galaxy are still not
 understood\footnote{For example, were disk stars with large velocity dispersion
@@ -134,8 +136,8 @@ below the projected midplane measured in the inner Galaxy \citep{xu15,
 apw15-triand}. There could therefore be a significant number of \mwdisk\ stars
 at $15~\kpc \lesssim R \lesssim 40~\kpc$ with heights $|z| \gtrsim 1~\kpc$, but
 it is unclear how this population would connect to the midplane of the disk. In
-comparison, gas associated with the HI disk has been detected out to
-Galactocentric radii $R \approx 60~\kpc$ \citep{kalberla08}.
+comparison, gas associated with the HI disk has been estimated to be as large as
+$R \approx 60~\kpc$ \citep{kalberla08}.
 
 In the opposite direction---towards the inner Galaxy---dust extinction severely
 hampers studies of the Galaxy. Only the brightest and reddest stars observable
@@ -198,9 +200,11 @@ galaxies.} and can therefore be characterized by their pattern speed,
 $\Omega_b$. For the \mwbulge, an additional kinematic quantity is the
 present-day angle of the bar relative to the sun-Galactic center axis, $\phi_b$.
 Many different methods have been applied to inferring the pattern speed and bar
-angle and are largely inconsistent, however it is generally believed that $25 <
-\Omega_b < 60 \kmskpc$ and $20^\circ < \phi_b < 30^\circ$ \citep{dwek95,
-stanek97, debattista02, shen10, wegg13, cao13, wegg15, portail15}.
+angle and have generally found that $25 < \Omega_b < 60~\kmskpc$ and $20^\circ <
+\phi_b < 30^\circ$ \citep[but individual measurements are generally inconsistent
+in that they are separated by values much larger than their estimated
+uncertainties;][]{dwek95, stanek97, debattista02, shen10, wegg13, cao13, wegg15,
+portail15}.
 
 % \todo{Formation of the bulge still not understood -- instability in disk?
 % mergers? globular clusters?}
@@ -210,17 +214,17 @@ stanek97, debattista02, shen10, wegg13, cao13, wegg15, portail15}.
 
 \subsection{Halo} \label{sec:mw-halo}
 
-The \mwhalo\ here refers to anything outside of the \mwdisk\ or \mwbulge\ that
-is still gravitationally bound to the Milky Way. This includes the gaseous
-\mwhalo, the stellar \mwhalo, and the dark matter \mwhalo. The stellar \mwhalo\
-is the only of these three sub-components that is directly observable: the
-presence of the dark matter \mwhalo\ that dominates the total mass of the Galaxy
-on large scales is inferred indirectly \citep[e.g.,][]{vandermarel12b}, and the
-gaseous halo is low-density and has thus far been studied using absorption line
-features in background sources \citep{miller13}. The gaseous \mwhalo---though
-important for mediating inflows and outflows of gas to and from the \mwdisk---is
-likely unimportant for the orbits of halo stars and will be largely ignored in
-this \article. %\citep[$M_{\rm h:g} \approx 10^{10}~\msun$;][]{blitz00, salem15}
+The \mwhalo\ here refers to anything not kinematically associated with the
+\mwdisk\ or \mwbulge\ that is still gravitationally bound to the Milky Way. This
+includes the gaseous \mwhalo, the stellar \mwhalo, and the dark matter \mwhalo.
+The stellar \mwhalo\ is the only of these three sub-components that is directly
+observable: the presence of the dark matter \mwhalo\ that dominates the total
+mass of the Galaxy on large scales is inferred indirectly
+\citep[e.g.,][]{vandermarel12b}, and the gaseous halo is low-density and has
+thus far been studied using absorption line features in background sources
+\citep{miller13}. The gaseous \mwhalo---though important for mediating inflows
+and outflows of gas to and from the \mwdisk---is likely unimportant for the
+orbits of halo stars and will be largely ignored in this \article. %\citep[$M_{\rm h:g} \approx 10^{10}~\msun$;][]{blitz00, salem15}
 
 The stellar \mwhalo\ contains a tiny fraction of the baryons in the Galaxy
 \citep[$\approx$1\%;][]{bell08} but is of great importance for studying the
@@ -255,7 +259,7 @@ $\alpha_{\rm out} \approx 4$--6 with a break radius of $r_{\rm break} \approx
 20$--30 kpc \citep{watkins09, sesar10, deason11, sesar11, sesar13a}. The
 kinematics of these populations have been used to measure the velocity
 dispersion profile of the stellar \mwhalo\ and have found an analogous
-breal: the radial velocity dispersion appears to decline steeply from
+break: the radial velocity dispersion appears to decline steeply from
 $\sigma_r \approx 150~\kms$ at $r\approx10~\kpc$ to $\sigma_r \approx 100~\kms$
 at $r\approx20~\kpc$, after which the decline slows until it reaches $\sigma_r
 \approx 50~\kms$ at $r\approx100~\kpc$ \citep{battaglia05, xue08, brown10,
@@ -275,7 +279,8 @@ unmixed merger remnants such as the Sagittarius stream \citep[which contains
 almost as much stellar mass as the rest of the stellar \mwhalo\
 combined;][]{niedersteostholt10}. The existence of substructure has been shown
 to bias mass inferences made with random-tracer methods by up to 20\%
-\citep{yencho06}.\footnote{This bias is likely smaller than the systematic
+\citep[certain orbits will be represented more than others as opposed to being
+random;][]{yencho06}.\footnote{This bias is likely smaller than the systematic
 uncertainties in the velocity and mass profile measurements, but these
 uncertainties are typically not included in constraints made by such methods.}
 
@@ -289,7 +294,7 @@ method for using stellar tidal streams to infer the underlying mass distribution
 that properly handles uncertainties or missing data in the kinematics of the
 individual stream stars.
 
-\section{The Milky Way in context} \label{sec:mw-context}
+\section{The Milky Way in the context of cosmology} \label{sec:mw-context}
 
 Though the composition of dark matter (DM) is still unknown, the large-scale
 properties of the universe are precisely characterized by the $\Lambda$ Cold
@@ -299,11 +304,11 @@ megaparsecs are fit to extreme precision with $\Lambda$CDM \citep{planck15,
 sanchez12}. On smaller scales, simulations of galaxy formation have not
 converged on a set of concrete predictions, however a number of consistencies do
 appear across a range of DM models and even with inclusion of baryonic physics:
-(1) the spherically-averaged density profiles of DM halos seem to follow a
-universal profile across a large dynamic range in mass, (2) DM halos are
-permeated with substructure on many scales, (3) are triaxial in shape, and (4)
-have shapes and orientations that vary with radius \citep{dubinski91, navarro96,
-jing02, kuhlen07, veraciro11}.
+DM halos (1) have spherically-averaged density profiles that seem to follow a
+universal profile across a large dynamic range in mass, (2) are permeated with
+substructure on many scales, (3) are triaxial in shape, and (4) have shapes and
+orientations that vary with radius \citep{dubinski91, navarro96, jing02,
+kuhlen07, veraciro11}.
 
 Within this paradigm, the Milky Way has grown to its present-day size and shape
 through a combination of steady accretion of gas and dark matter from the cosmic
@@ -313,8 +318,8 @@ Evidence of the former is difficult to measure directly, but gas flows into
 high-redshift galaxies are starting to be detected \citep{martinc15}. There is,
 however, clear evidence of the latter: to date, $\approx$45 satellite galaxies
 have been discovered around the Milky Way with a large range in masses,
-Galactocentric distances, and at different stages of merging with the Galaxy.
-%\todo{Figure~XX %summarizes ...}.
+Galactocentric distances, and at different stages of merging with the Galaxy
+\citep{belokurov07c, bechtol15}.
 
 The largest mass satellites are the pair of massive dwarf galaxies visible to
 the naked eye from the southern hemisphere: the Large and Small Magellanic
@@ -328,14 +333,13 @@ $M_{\rm LMC+SMC} \approx 4$--$8 \times 10^{9}~\msun$ \citep{jones94} of stars
 from this system.\footnote{Compare this mass to the stellar mass in the halo
 today, $M_{h:s} \approx 5 \times 10^8~\msun$ (Section~\ref{sec:mw-halo}).}
 
-Most of the Milky Way satellite galaxies are dwarf spheroidal or elliptical
-galaxies that have metal-poor stellar populations. A significant fraction
-show evidence of tidal distortion or extra-tidal stars
-\citep[e.g.,][]{belokurov07c, coleman07} and are thus in the early stages of
-tidal destruction. Other satellites like the Sagittarius dwarf elliptical galaxy
-and its large stellar stream are already long into the process of merging, but
-given the long dynamical times of the halo will take 10s of Gigayears to fully
-mix into a smooth \mwhalo\ component.
+In contrast to the LMC and SMC, most Milky Way satellite galaxies are dwarf
+spheroidal or elliptical galaxies that have metal-poor stellar populations. It
+has been argued that a significant fraction show evidence of tidal distortion or
+extra-tidal stars \citep[e.g.,][]{belokurov07c, coleman07} and are thus in the
+early stages of tidal destruction. Other satellites like the Sagittarius dwarf
+spheroidal galaxy are already long into the process of merging as evidenced by
+its large stellar stream.
 
 In addition to the satellite galaxies, there are a handful of massive tidal
 debris structures with no known progenitor systems: to highlight a
@@ -348,10 +352,13 @@ from the midplane rather than material from a destroyed satellite.} Finding and
 modeling streams and substructure is important because they constrain the dark
 matter distribution, but also because many of these features were once satellite
 galaxies: to measure the accretion history and satellite population around the
-Milky Way, we will need to account for those that have already been destroyed. A
-naive comparison to cosmological simulations suggest that---even after
-correcting for observational biases---this number is an order of magnitude lower
-than the expected number of subhalos expected around Milky Way-mass galaxies in
+Milky Way, we will need to account for those that have already been destroyed
+\citep[e.g.,][]{johnston08}. Luckily, these structures are long-lived because of
+the long dynamical times of the halo (e.g., the Sagittarius stream will take 10s
+of Gigayears to fully mix into a smooth \mwhalo\ component). A naive comparison
+to cosmological simulations suggest that---even after correcting for
+observational biases---this number is an order of magnitude lower than the
+expected number of subhalos expected around Milky Way-mass galaxies in
 dark-matter-only simulations. Higher resolution simulations that include
 baryonic physics appear to shrink this expected number to within a factor of a
 few of the observed number \citep[e.g.,][]{zolotov12, brooks13,sawala16},
@@ -370,24 +377,29 @@ visually inspecting maps of data from large photometric surveys like the Sloan
 Digital Sky Survey (SDSS) or Pan-STARRS \citep[e.g.,][]{grillmair06a, bonaca12,
 bernard14}.
 
-The sun's position in the Galaxy provides us with a three-dimensional view of
-the halo. Soon it will be possible to measure full-space kinematics and detailed
-chemical abundances for large samples of stars in the halo, thanks to the
-ongoing \gaia\ mission and future spectroscopic surveys. It is critical to
-develop and test modeling methods to fully leverage the information content in
-this data to understand the Milky Way and its place in the broader story of
-galaxy formation.
-
 \section{Surveys of the Milky Way halo} \label{sec:mw-surveys}
 
-Ongoing and future surveys will get kinematics for millions of stars associated
-with kinematic substructure in halo. Certain types of stars are better kinematic
-tracers because of their brightness and dependence on stellar population.
+The sun's position in the Galaxy provides us with a three-dimensional view of
+the \mwhalo\ . Soon it will be possible to measure full-space kinematics and
+detailed chemical abundances for large samples of stars in the \mwhalo, thanks
+to the ongoing \gaia\ mission and future spectroscopic surveys. It is critical
+to develop and test modeling methods to fully leverage the information content
+in this data to understand the Milky Way and its place in the broader story of
+galaxy formation.
 
 \subsection{Stellar tracers}
 
-Main-sequence turnoff (MSTO) stars are the most numerous tracers that are useful
-for dynamical studies of the halo because they are found in all stellar
+Ongoing and future surveys will measure kinematics for millions of stars
+associated with kinematic substructure in halo. Certain types of stars are
+better kinematic tracers because of their brightness and dependence on stellar
+population. In order to understand the information in these surveys, it is
+important to first understand the tracers. The stellar tracers described below
+are used because it is possible to select them using photometric colors or
+variability, measure their distances, and consequently use them as indicators of
+the underlying stellar populations \citep[e.g.,][]{bell10, apw15-triand}.
+
+{\bf Main-sequence turnoff (MSTO)} stars are the most numerous tracers that are
+useful for dynamical studies of the halo because they are found in all stellar
 populations. These stars form a horizontal feature in a Hertzsprung-Russell
 diagram where stars evolve off the main sequence before ascending the giant
 branch; these stars typically have F spectral types and absolute $V$-band
@@ -404,28 +416,28 @@ DM,MSTO} \approx 0.2$, corresponding to $\approx$10\% distance uncertainties for
 populations at the same distance. MSTO stars have been used to study large-scale
 structure in the halo \citep[e.g.,][]{newberg02} but because of their large
 distance errors they can't be used to resolve small-scale features. The \gaia\
-mission will measure parallaxes better than 50\% and 10\% out to $\approx$5
-kpc and $\approx$2 kpc, respectively.
+mission will measure parallaxes better than 50\% and 10\% out to $\approx$5 kpc
+and $\approx$2 kpc, respectively.
 
-Horizontal branch (HB) stars are considerably less numerous than MSTO stars; a
-typical metal-poor globular cluster will contain a few to a few tens of HB stars
-but will contain thousands of MSTO stars. However, because of their luminosity
-($M_V \approx 0.5$) and significantly smaller distance uncertainties, these are
-extremely powerful kinematic tracers.
+{\bf Horizontal branch (HB)} stars are considerably less numerous than MSTO
+stars; a typical metal-poor globular cluster will contain a few to a few tens of
+HB stars but will contain thousands of MSTO stars. However, because of their
+luminosity ($M_V \approx 0.5$) and significantly smaller distance uncertainties,
+these are extremely powerful kinematic tracers.
 
-Blue horizontal branch (BHB) stars are post-main-sequence stars that have
-evolved off of the red giant branch (RGB) and onto the HB, which
-has a small scatter in absolute magnitudes for a wide range of initial stellar
-masses and metallicities ($\sigma_{\rm mag,BHB} \approx 0.15$). BHB stars
-typically have low metallicities $\feh \lesssim -1$, but the details of stellar
-evolution that lead to the formation of HB stars is still not well understood
+{\bf Blue horizontal branch (BHB)} stars are post-main-sequence stars that have
+evolved off of the red giant branch (RGB) and onto the HB, which has a small
+scatter in absolute magnitudes for a wide range of initial stellar masses and
+metallicities ($\sigma_{\rm mag,BHB} \approx 0.15$). BHB stars typically have
+low metallicities $\feh \lesssim -1$, but the details of stellar evolution that
+lead to the formation of HB stars is still not well understood
 \citep{percival11}. These stars are very useful for studying the halo because
 they are intrinsically bright and good distance indicators \cite[$\sigma_{d}/d
 \approx 10\%$; see, e.g.,][]{xue08, deason11}; outside of $\approx$4 kpc, \gaia\
 parallaxes uncertainties will be worse than photometric distance measurements
 for BHB stars.
 
-RR Lyrae (RRL) stars are also HB stars but lie in the region where the HB
+{\bf RR Lyrae (RRL)} stars are also HB stars but lie in the region where the HB
 crosses the instability strip and are therefore pulsating variable stars. RRL
 star periods range from around $T \approx 0.2$--$0.8$ days and are easily
 identifiable from the distinct shapes of their optical light curves
@@ -438,45 +450,45 @@ that enables extremely precise distance measurements to individual stars
 out to $\approx$120 kpc \citep{sesar10} and have been used extensively to map
 the structure of the halo \citep[e.g.,][]{sesar13a}.
 
-Red clump (RC) stars form the metal-rich end of the HB and lie near the giant
-branch because these stars lose less of their envelopes before the core begins
-helium burning. The instrinsic scatter in RC star distances is comparable to
-that of BHB stars so that distance measurements to individual stars have
+{\bf Red clump (RC)} stars form the metal-rich end of the HB and lie near the
+giant branch because these stars lose less of their envelopes before the core
+begins helium burning. The instrinsic scatter in RC star distances is comparable
+to that of BHB stars so that distance measurements to individual stars have
 uncertainties $\sigma_{d}/d \approx 10\%$ \citep[e.g.,][]{bovy14-rc}.
 
-An old stellar population will contain red giant stars that can be seen to
-extreme distances because of their large luminosities ($M_V \approx 1$ to $-3$).
-Lower-metallicity giants will fall in the K spectral type (K giants) and high-
-metallicity giants will fall in the M spectral type (M giants). The Milky Way
-halo is dominated by K giants because the mean metallicity is so low, but there
-are still an appreciable number of M giants (many of which are associated with
-the Sagittarius debris system). The most luminous M giant stars are currently
-detected as far as $\approx$300 kpc into the halo, enabling searches for distant
-Milky Way satellites and debris structures \citep{bochanski14}. K giants have
-been used to study the density profile of the inner $r \lesssim 80~\kpc$ of the
-halo \citep{xue15}, but discrimination between dwarf stars and giant stars at
-these spectral types is often difficult and can lead to significant
-contamination.
+{\bf Red giant (RG)} stars are present in old stellar populations and can be
+seen to extreme distances because of their large luminosities ($M_V \approx 1$
+to $-3$). Lower-metallicity giants will fall in the K spectral type (K giants)
+and high- metallicity giants will fall in the M spectral type (M giants). The
+Milky Way halo is dominated by K giants because the mean metallicity is so low,
+but there are still an appreciable number of M giants (many of which are
+associated with the Sagittarius debris system). The most luminous M giant stars
+are currently detected as far as $\approx$300 kpc into the halo, enabling
+searches for distant Milky Way satellites and debris structures
+\citep{bochanski14}. K giants have been used to study the density profile of the
+inner $r \lesssim 80~\kpc$ of the halo \citep{xue15}, but discrimination between
+dwarf stars and giant stars at these spectral types is often difficult and can
+lead to significant contamination.
 
 \subsection{Surveys past, present, and future}
 
 Large-area, precise photometric surveys like the Sloan Digital Sky Survey
-\citep[SDSS;][]{york00} and Two Micron All Sky Survey
-\citep[2MASS;][]{skrutskie06} have revolutionized our view of the \mwhalo\ and
-have enabled the discovery and characterization of the majority of the known
-tidal debris structures around the Milky Way. The vast majority of these
-structures have been discovered as over-densities in configuration-space alone
-(e.g., in distance and sky position). This is largely because the number of
-\mwhalo\ stars with radial velocity measurements is a factor of $\approx$1000
-smaller than the number of photometrically identified stars, and the number with
-proper motion measurements is even smaller. When tangential velocity
-measurements from the \project{Hipparcos} mission \citep{perryman97}---which
-measured proper motions and parallaxes to $\approx$$10^5$ stars in the solar
-neighborhood---were supplemented with radial velocities from the
-Geneva-Copenhagen survey \citep{nordstrom04}, a significant amount of velocity
-substructure was uncovered even in this small volume \citep[e.g.,][]{bovy09,
-minchev10}. The \gaia\ mission will provide this kind of revelation for the
-Milky Way \mwhalo.
+\citep[SDSS;][]{york00}, Two Micron All Sky Survey
+\citep[2MASS;][]{skrutskie06}, and Dark Energy Survey \citep[DES;][]{flaugher12}
+have revolutionized our view of the \mwhalo. These surveys have enabled the
+discovery and characterization of nearly all known dwarf satellites of the Milky
+Way and the majority of the known tidal debris structures in the \mwhalo. The
+vast majority of these structures have been discovered as over-densities in
+configuration-space alone (e.g., in distance and sky position). This is largely
+because the number of \mwhalo\ stars with radial velocity measurements is a
+factor of $\approx$1000 smaller than the number of photometrically identified
+stars, and the number with proper motion measurements is even smaller. When
+tangential velocity measurements from the \project{Hipparcos} mission
+\citep{perryman97}---which measured proper motions and parallaxes to
+$\approx$$10^5$ stars in the solar neighborhood---were supplemented with radial
+velocities from the Geneva-Copenhagen survey \citep{nordstrom04}, a significant
+amount of velocity substructure was uncovered even in this small volume
+\citep[e.g.,][]{bovy09, minchev10}.
 
 \begin{figure}[h]
 \centering
@@ -501,7 +513,8 @@ uncertainties from \gaia\ for a star with a tangential velocity $v_{\rm tan} =
 \label{fig:gaiastellarpops}
 \end{figure}
 
-The \gaia\ mission is currently measuring parallaxes, proper motions, and radial
+The \gaia\ mission will provide this kind of revelation for the Milky Way
+\mwhalo. \gaia\ is currently measuring parallaxes, proper motions, and radial
 velocities for $\approx$$10^{8}$ stars in the Milky Way. The end-of-mission data
 release from \gaia\ (expected in 2022) will provide astrometric measurements for
 $\approx$$10^{9}$ stars. At distances $\gtrsim$10 kpc in the \mwhalo, the radial
@@ -517,14 +530,14 @@ Another highly anticipated survey for Milky Way \mwhalo\ science is the Large
 Synoptic Survey Telescope \citep[LSST;][]{lsstsciencebook}. The telescope design
 and large mirror of the LSST will enable deep imaging over a huge field of view
 (magnitude limits of $\approx$24.5 for single-epoch images, $\approx$27.5 for
-coadded images). The LSST will image most of the visible sky in five filters
-every few nights, which will allow identification of faint time-variable stars
-like RR Lyrae stars at extreme distances (out to $\approx$2--3 times the virial
-radius of the Milky Way). At the faint end, the LSST will supercede the \gaia\
-astrometry and provide proper motions better than $\lesssim$$1~{\rm mas}~{\rm
-yr}^{-1}$ for stars with $r$-band magnitudes $20 \lesssim r \lesssim 24$. The
-survey will begin science operations in 2022 with the first data release
-expected about a year later.
+coadded images after 10 years). The LSST will image most of the visible sky in
+five filters every few nights, which will allow identification of faint
+time-variable stars like RR Lyrae stars at extreme distances (out to
+$\approx$2--3 times the virial radius of the Milky Way). At the faint end, the
+LSST will supercede the \gaia\ astrometry and provide proper motions better than
+$\lesssim$$1~{\rm mas}~{\rm yr}^{-1}$ for stars with $r$-band magnitudes $20
+\lesssim r \lesssim 24$. The survey will begin science operations in 2022 with
+the first data release expected about a year later.
 
 Much of the \mwhalo\ will be mapped in sky position, distance, and proper motion
 by the combination of \gaia\ and LSST; the last kinematic quantities needed are
@@ -544,13 +557,17 @@ Galaxy. The future Dark Energy Spectroscopic Instrument
 \citep[DESI;][]{desi-whitepaper} will take spectra of an additional
 $\approx$$10^7$ stars, but this is still orders of magnitude below the number
 needed to have complete 6D phase-space coverage for the entire Milky Way halo.
+Other proposed  surveys such as WEAVE \citep{weave12}, the Subaru prime-focus
+spectrograph \citep[PFS;][]{subarupfs15}, and 4MOST \citep{4most12} would
+greatly aid in this effort but are currently being planned.
 
 % [...maybe add something about focusing on particular tracer?]
 
 \section{Outline of thesis}
 
-This \article\ develops two new, complimentary approaches
-(Chapters~\ref{ch:rewinder1}--\ref{ch:rewinder2} and
+To take advantage of the enormous volume of imminent and near-future data for
+substructure in the Milky Way \mwhalo, this \article\ develops two new,
+complimentary approaches (Chapters~\ref{ch:rewinder1}--\ref{ch:rewinder2} and
 Chapters~\ref{ch:chaos-morphology}--\ref{ch:chaos-ophiuchus}) for studying the
 structure of matter around the Milky Way using stellar streams.
 
