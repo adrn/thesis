@@ -1,83 +1,30 @@
 \chapter[Conclusion]{Conclusion}
 \label{ch:conclusion}
 
+Stellar streams are a unique tool for measuring the structure of mass around galaxies where the density of visible tracers is low. The work presented in this \article\ has shown that it will soon be possible to infer the 3D shape and distribution of dark matter around the Milky Way by modeling the many streams observed in the Galactic halo. This goal will be made possible by near-future catalogs of 6D kinematic measurements for individual stars in these streams from surveys like the \gaia\ mission. We have also shown that dynamical chaos can dramatically alter the morphological evolution of streams. Since the amount and significance of chaos depends strongly on the Galactic gravitational potential, this supports developing a new method for constraining the potential based purely on the morphologies of the many long, thin streams presently seen around the Milky Way. In this section, we summarize and discuss the key results presented in this \article\ and discuss future directions for this work.
 
-Hydrodynamic simulations provide a unique tool for understanding the structures and flows of baryons in galaxies. This work has focused on their ability to shed light on the interaction between star forming disks and the circumgalactic medium of MW mass halos. These interactions take many forms, of which we've studied just two: galactic winds powered by star formation that enrich the CGM; and the ram pressure headwind experienced by massive satellites like the Large Magellanic Cloud, that strip the disk of star forming material. A better understanding of all these processes informs the big picture of where baryons sit in galaxy halos, what form they take and how their dynamics and transformations unfold over cosmic time. In this section, we provide a brief summary of this dissertation's important findings before briefly considering future areas of inquiry.
+\section{Summary of Results} \label{sec:summary}
 
+% Rewinder 1
+In Chapter \ref{ch:rewinder1}, we developed a new algorithm for using precise kinematic measurements of stars in stellar streams to measure the parameters of the underlying host galaxy's gravitational potential. This work was motivated by the prospect of combining extremely precise distance measurements for RR Lyrae stars with proper motion measurements from the \gaia\ mission and ground-based radial velocities to obtain full-space kinematics for samples of stars in stellar streams in the Galactic halo. The algorithm operates with the simple assumption that stars observed in a stellar stream were once part of the same progenitor system; by integrating the orbits of the progenitor system and stream stars backwards in time, in more correct host galaxy potential models the stars should come closer (in 6D phase-space) to the progenitor. We demonstrated that by modeling observations of a simulation of the Sagittarius stream with realistic but optimistic uncertainties, the true potential parameters can be inferred with small uncertainties and negligible biases. While this is encouraging and demonstrates the power of using dynamically cold structures for dynamical inference, it does is not a proper likelihood function and therefore cannot be used when there are missing or poorly measured data dimensions.
 
-% ========= SUMMARY OF RESULTS
-\section{Summary of Results}
-\label{sec:summary}
+% Rewinder 2
+In Chapter \ref{ch:rewinder2}, we used the ideas presented in Chapter~\ref{ch:rewinder1} to develop a probabilistic model for stellar streams. The key enhancement of this new approach is that it is written as a likelihood function with priors on the parameters so that missing or poorly-measured data can be incorporated into the inference of the potential parameters. \rewinder\ is distinct from many other stream-modeling methods because it (1) makes no assumption about the underlying form or integrability of the host galaxy potential, (2) non-parametrically infers the mass-loss history of the progenitor system, and (3) models the distribution function of stars \emph{at the time of stripping} rather than at present-day and can therefore analytically evaluate the likelihood without numerically reconstructing the density field. We tested \rewinder\ with a simulation observed with different assumptions about the tracer population (different data qualities) and showed that in all cases, all input potential parameters are successfully recovered: mass and length scaling but also the shape parameters of the input triaxial halo. 
 
-% ===== IDEAL CR
-In Chapter \ref{ch:ideal-cr}, we explored the dynamical impact of cosmic rays by performing three-dimensional, adaptive mesh refinement simulations of an isolated starbursting galaxy that included a basic model for the production, dynamics and diffusion of galactic cosmic rays.  We found that including cosmic rays naturally lead to robust, massive, bipolar outflows from our $10^{12}M_\odot$ halo, with a mass-loading factor $\dot{M}/{\rm SFR} = 0.3$ for our fiducial run. Other reasonable parameter choices led to mass-loading factors above unity.  The wind is multiphase and is accelerated to velocities well in excess of the escape velocity.  We employed a two-fluid model for the thermal gas and relativistic CR plasma and modeled a range of physics relevant to galaxy formation, including radiative cooling, shocks, self-gravity, star formation, supernovae feedback into both the thermal and CR gas, and isotropic CR diffusion. Injecting cosmic rays into star-forming regions can provide significant pressure support for the interstellar medium, suppressing star formation and thickening the disk. We found that CR diffusion plays a central role in driving superwinds, rapidly transferring long-lived CRs from the highest density regions of the disk to the ISM at large, where their pressure gradient can smoothly accelerate the gas out of the disk.
+% Chaos / stream-morphology
+In Chapter \ref{ch:chaos-morphology}, we showed that even when chaos is not important for restructuring the global orbit structure of a galaxy, chaos can greatly enhance the density evolution of stellar streams over just a few orbital times. This suggests that the morphology of tidal streams \emph{alone} can constrain the significance of chaos along the orbits of the progenitor systems, thereby placing constraints on the global properties of the gravitational potential. For example, different dark matter particle candidates (WIMPs vs. axions) predict vastly different amounts of substructure, which can dramatically change the number of chaotic orbits in a given potential; the amount of chaos is therefore sensitive to the physical nature of dark matter. This result motivates developing a quantitative framework to use the observed density structure of streams and shells to map the orbit structure of the host potentials. Critically, this would be applicable to imaging data where only the configuration-space morphology of the structures are observable, but can be tested and calibrated with the existing thin streams around the Milky Way.
 
-% ====== COSMO CR
-In Chapter \ref{ch:cosmo-cr} we investigated the dynamical impact of cosmic rays in cosmological simulations of galaxy formation using adaptive-mesh refinement simulations of a $10^{12} \msun$ halo. In agreement with previous work, a run with only our standard thermal energy feedback model results in a massive spheroid and unrealistically peaked rotation curves.  However, the addition of a simple two-fluid model for cosmic rays drastically changed the morphology of the forming disk.  As in the previous chapter, we included an isotropic diffusive term and a source term tied to star formation due to (unresolved) supernova-driven shocks.  Over a wide range of diffusion coefficients, the CRs generated thin, extended disks with a significantly more realistic (although still not flat) rotation curve.  We found that the diffusion of CRs is key to this process, as they escape dense star forming clumps and drive outflows within the more diffuse ISM.
+% Ophiuchus
+In Chapter \ref{ch:chaos-ophiuchus}, we present dynamical models for the newly-discovered and peculiarly-short Ophiuchus stream that suggest that the stream has formed in a strongly chaotic region of phase-space. We found that the stream's proximity to the Galactic center suggests that the bar must have a significant influence on its dynamical history: the triaxiality and time-dependence of the bar generates many chaotic orbits in the vicinity of the stream. We model the formation of the stream in a Milky Way potential model that includes a rotating bar and found that in all choices for the rotation parameters of the bar, orbits fit to the stream are strongly chaotic. Mock streams generated along these orbits qualitatively match the observed properties of the stream: because of chaos, stars stripped early generally form low-density, high-dispersion ``fans'' leaving only the most recently disrupted material detectable as a strong over-density. Our models predict that there should be more low-surface-brightness tidal debris than detected so far, likely with a complex phase-space morphology. This is the first time that chaos has been used to explain the properties of a stellar stream and is the first demonstration of the dynamical importance of chaos in the Galactic halo.
 
-% ======== CR CGM
-In Chapter \ref{ch:cr-cgm} we explored the impact of cosmic rays on the Circumgalactic Medium (CGM) in the same cosmological runs as in Chapter \ref{ch:cosmo-cr}. Runs with CRs featured gas metallicities approaching $1/10$th solar within a majority of the CGM's volume, a direct result of long-lived galaxy-scale winds from the central disk. Beyond winds, the CR fluid provided pressure support within the CGM, harboring a large HI bubble in the inner CGM of low-diffusion runs and a mix of CR and thermal-pressure dominated gas at large radii, resulting in a rich phase structure for the diffuse gas. Mock UV-absorber columns provided a good match to data from COS-halos at $z \sim 0.2$ for HI, SiIV, CIII and OVI. More diffusive runs featured a gamma-ray luminosity due to hadronic losses on order that recently found for M31 and predicted for the MW. For less-diffusive runs, the CGM may host a large component of its mass at $T \lesssim 10^5$ K.
+\section{Future Work} \label{sec:future-work}
 
-% ======== LMC RPS
-In Chapter \ref{ch:lmc-rps} we provided a tight constraint on the physical density of the Milky Way's (MW's) diffuse halo gas at $\sim 50$ kpc from the Galactic Center by studying ram pressure stripping (RPS) of the Large Magellanic Cloud (LMC). Recent observations have pinned down the position, velocity, orientation and structure of the LMC, implying a well-constrained pericentric passage about the MW $\sim 50$ Myr ago. In this scenario, the LMC's gaseous disk has recently experienced stripping, suggesting the extent of its observed HI disk provides a direct probe of the medium in which it is moving.  From the observed stellar and HI distributions of the system we found evidence of a truncated gas profile along the windward ``leading edge'' of the LMC disk, despite a far more extended stellar component. We explored the implications of this RPS signature, using both the simple analytic prescription of Gunn \& Gott and  full 3-dimensional hydrodynamic simulations of the LMC, including a self-gravitating gaseous disk evolving within a static stellar and DM potential. Our simulations subjected the system to a headwind whose velocity components correspond directly to the recent orbital history of the LMC. We varied the density of this headwind, using a variety of sampled parameters for a $\beta$-profile for a theoretical MW's hydrostatic gaseous halo, comparing the resulting HI morphology directly to observations of the LMC HI and stellar components. This model can match the radial extent of the LMC's leading (windward) edge only in scenarios where the MW halo gas density at pericentric passage is $n_p(R = 48.2 \pm 5\;{\rm kpc}) = 1.1^{+.44}_{-.45} \times 10^{-4} \; {\rm cm}^{-3}$. The implied pericentric density proved \emph{insensitive} to both the broader gaseous halo structure and temperature profile, thus providing a model-independent constraint on the local gas density. This result imposes an important constraint on the density profile of the MW's gas halo, and thus the total baryon content of the MW. From our work, assuming a $\beta$-profile valid to $\sim r_{\rm vir}$, we find the diffuse CGM accounts for $\approx 10 - 25\%$ of the expected galactic baryons.
+\subsection{\rewinder}
 
-% ============== FUTURE WORK
-\section{Future Work}
-\label{sec:future-work}
+\subsection{Chaos}
 
-% ==== COSMIC RAY PHYSICS
-\subsection{Cosmic Ray Physics}
-\label{sec:cr-physics}
+Stream dispersal -- mixing in inner galaxy
 
-% --- MORE TWO FLUID WORK
-\subsubsection{Further Investigations with the CR Two-Fluid Model}
-\label{sec:two-fluid}
-This dissertation has demonstrated the powerful reach of two-fluid models in capturing salient features of interstellar plasma dynamics with minimal added computation cost. At the time of distribution, higher resolution cosmological runs were already nearing $z=0$, providing evidence of a \emph{further} substantial reduction in the rotation curve peak of the central disks in runs featuring CRs. These runs also suggest convergence in our observed properties of the CGM, including column densities comparable to the COS-halos data. Our cosmological work has also thus far failed to explore lower CR feedback fractions during SN feedback (i.e. $f_{\rm CR} \in (0, 0.3)$), and even more diffusive CR fluids ($\kappa_{\rm CR} > 3 \times 10^{28}$ cm$^2$/s), particularly within the CGM. A spatially dependent diffusion coefficient, smaller in the disk than elsewhere in the halo, may also prove a better match to reality.
+\subsection{Ophiuchus}
 
-Beyond MW-mass systems, work is already underway elsewhere within our research group modeling dwarf systems, with evidence of a match to the Tully-Fisher relation (Chen et. al. in prep.). Smaller halos allow us to reach even higher resolution, which will allow an unprecedented look into the interaction of CR feedback with other sophisticated disk physics (molecular cloud chemistry and dynamics, resolved SN and stellar winds, photon pressure, etc \ldots ). Our model affords a study of halos at a range of mass scales. Although previous work has already studied the CR-gas interplay on cluster scales \citep[e.g.][]{Pfrommer2007,Pfrommer2008,Pfrommer2008b} this work has not included any diffusion/streaming mechanism. Modeling cluster-scale systems and early-type galaxies could further constrain the CR model and shed light on any ``mass turnover'' where the diffusive CR fluid no longer shapes the large scale flows within the halo. On the other extreme, earlier work has indicated CR physics may influence the prominence of luminous baryons in satellite halos \citep{Wadepuhl2011}, but this work likewise did not include any CR diffusion or streaming, and thus will need to be revisited.
-
-Chapter \ref{ch:cr-cgm} suggests an accurate understanding of the CR-infused CGM will require modeling CR loss processes --- in particular, hadronic losses --- within the simulation. As gamma-ray telescopes push forward with better constraints on the CGM's high energy emission, simple extensions of the two-fluid model to capture the CR spectrum (such as the slope-cutoff model briefly explored in \ref{sec:cgm-spectrum}) may prove necessary. 
-
-
-% --- BEYOND THE TWO-FLUID
-\subsubsection{Beyond the CR Two-Fluid Model}
-\label{sec:beyond-two-fluid}
-Our two-fluid CR model relies on a host of --- at times tenuous --- assumptions. The emergent behavior of the ISM we model must be corroborated via simulations a step closer to first principles. Evolving the thermal ISM via the equations of MHD would allow a more explicit treatment of the interaction of CRs and magnetic fields, affording an accurate approach to anisotropic diffusion and the excitement of MHD waves (another important CR loss mechanism). This work would probably not occur in global galaxy simulations, such as the work presented here, but rather on the scale of a shearing box resolving a cross section of the disk. Such work is a crucial step in verifying or nullifying (and certainly refining) the CR wind-launching mechanism we explored here. An even more ambitious researcher would recognize that the continuum physics equations used here are themselves reliant on tenuous assumptions, and instead adopt a kinetic Boltzmann approach.
-
-The complicated models just described are not feasible within today's generation of cosmological simulations, and thus less ambitious extensions of the two-fluid model will likely also find use in this context. A multi-fluid approach, modeling the CR spectrum as a broken power law, would afford a more sophisticated treatment of the relativistic fluid, revealing the dynamical evolution of the CR spectrum and thus more sophisticated emission modeling to match to observables. The cosmic ray \emph{electron} population, while less dynamically important, provides a direct link to observed synchrotron emission and thus modeling its evolution would further constrain these models.
-
-\subsection{The Large Magellanic Cloud and the Circumgalactic Medium}
-\label{sec:lmc-rps-future}
-
-Our LMC RPS work, with simple extensions, may hold important consequences for the properties of the Magellanic Stream (MS). The presence of the Leading Arm \citep{Putman2003} and the stream's divergence from the LMC's orbital path suggest a tidal origin for the stream \citep{Besla2012}. We can corroborate this by examining the stripped tail in our simulation. To do so will require a better treatment of gas cooling and star formation which can substantially alter the tail's mass and appearance \citep{Tonnesen2009,Tonnesen2012}. This may also give us a prediction of which portions of the stream are enriched with LMC disk material. 
-
-Another key observable within reach via the merger of the two main topics of this dissertation involves modeling the high energy emission beyond the leading edge, via including our cosmic ray physics and modeling 30 Doradus as a point-source of rays. The diffusive CR fluid, together with explicit star formation, may also provide a more accurate reflection of how much material is liberated from the LMC during its orbit via mass-loaded winds.
-
-Our work to date has ignored the complex velocity structure of the CGM. Further wind-tunnel experiments capturing the salient features of a more stochastic velocity structure may alter the findings presented here.
-
-Beyond the wind-tunnel approach, including the SMC and tidal effects with live dark matter within a growing MW NFW profile could shed light on the interaction of RPS with gravitational forces constantly reshaping the MCs during their plunge into the MW.
-
-Ultimately a combination of all the above effects could help constrain possible gas initial conditions for the LMC disk, narrowing our halo density measurement and providing a broader understanding the LMC/CGM interaction.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Surprising that chaos matters: only 10s of orbits vs. 1000s of orbits .... ongoing searches for "fanned" stuff and tentative evidence.
