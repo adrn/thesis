@@ -21,9 +21,29 @@ In Chapter \ref{ch:chaos-ophiuchus}, we present dynamical models for the newly-d
 
 \subsection{\rewinder}
 
+\rewinder\ and other stream-modeling methods have demonstrated that they can \emph{precisely} infer potential parameters from simulated data where the analytic form of the gravitational potential is known but the parameter values are not known. This is, of course, a far reach from the real universe where the form of the potential is likely very complex. In our view, two critical enhancements must be made before \rewinder\ or any other stream-modeling methods can be meaningfully applied to observational data. First, they must use flexible or non-parametric forms for the potential, for example, using basis function expansions of the potential. This will make the potential inferences less precise but will be less biased. Second, these methods must simultaneously incorporate data from multiple streams.
+
+% [What tracers are most informative]
+
 \subsection{Chaos}
 
-Stream dispersal -- mixing in inner galaxy
+\subsubsection{Milky Way}
+
+The frequency diffusion rate (FDR) is a measure of how fast the fundamental frequencies of a given orbit change due to dynamical chaos. An ensemble of orbits with a small spread in energy or frequencies (e.g., tidal debris from a low-mass progenitor) will have similar FDRs, and thus the FDR of the progenitor orbit correlates with the rate of density evolution of the debris \citep{apw15-chaos}. To convert from an observed rate of density evolution measured from a LSB image of substructure around external galaxies to a constraint on the FDR we will need to first measure the scaling relation between these quantities. In previous work, I computed the FDRs for a grid of orbits at a single energy level in a particular triaxial potential (Fig.~\ref{fig:fdiffmap}); for this work, I will use this same methodology to study grids of orbits in a variety of potential forms at many energy levels to measure the empirical relation between FDR and the density evolution of tidal debris.
+
+Do the morphologies of thin streams around the MW constrain the triaxiality or shape of the Galactic potential? The light regions of the orbit grid shown in Fig.~\ref{fig:fdiffmap} are regular orbits at this energy surface. The thin streams around the MW must exist in such regions in the Galactic potential. I will run a suite of $N$-body simulations of stream formation along random orbits in a triaxial galaxy potential and use the final phase-space morphologies of the debris to measure the FDR for each stream (using the machinery proposed in the previous section). From this, I will learn how many streams are needed to effectively map the orbit structure of a potential to place interesting constraints on the global potential. I will then use the thin streams around the MW to independently constrain the shape of the halo to compare with the measurement from \texttt{Rewinder}.
+
+Stream dispersal -- mixing in inner galaxy -- already dispersed streams??
+
+\subsubsection{External}
+
+Opportunity to use density alone to constrain statistical properties of halos???
+
+The high-latitude survey (HLS) of the WFIRST mission will cover 2200 deg$^2$ with an unprecedented limiting $J$-band magnitude of $J=26.7$ \citep{spergel15}. With the expected surface brightness limits (32 mag arcsec$^{-2}$), WFIRST is expected to measure 5--10 distinct debris structures around each of over 100 of these nearby galaxies \citep{johnston08}. The surface-brightness limits of the upcoming LSST (29 mag arcsec$^{-2}$) are less sensitive, but the survey will contain a much larger sample of galaxies ($\approx$$10^6$). With large samples of LSB images of nearby galaxies in mind, I propose to develop new theoretical frameworks to use these data to infer the distribution of DM halo shapes and accretion histories. This proposed work is split into two complimentary approaches: (1) to develop a physical model for the expected distribution of morphologies of tidal debris structures given the halo shape and profile distributions (Sec.~\ref{sec:chaosmorphology}), and (2) to explore a data-driven method that uses statistical machine learning to infer these population properties (Sec.~\ref{sec:ml}).
+
+Around large samples of nearby galaxies, we will not be able to measure velocities or distances to individual stream stars for the foreseeable future. Instead, deep surveys such as the the high-latitude survey of the \mission{WFIRST} mission will map stellar populations in 5--10 distinct stellar streams and shells around each of over 100 nearby galaxies \citep{johnston08,spergel15}. While the morphologies of streams will be more sensitive to chaos induced by triaxiality and intermediate-scale properties of dark matter halos, shells are more sensitive to the radial profile of the halo because the stellar orbits may come arbitrarily close to the center of the host galaxy where the profile is steepest and forces are strongest. Combining both types of debris structures will lead to better constraints on the host halo potentials: {\bf I will explore how chaotic frequency diffusion affects the density and morphology evolution of stellar shells in order to build a complete picture of how chaos alters the stellar halos of galaxies}.
+
+Having statistics about dark matter halo properties will inform the search for dark matter: Different dark matter particle candidates (WIMPs, axions) predict vastly different amounts of substructure, which dramatically changes the number of chaotic orbits in a given potential. The amount of chaos is therefore sensitive to small-scale dark matter physics. The methods and insights developed here will be essential for using the deep imaging data provided from the \mission{WFIRST} and \mission{LSST} surveys to constrain dark matter models and cosmology.
 
 \subsection{Ophiuchus}
 
