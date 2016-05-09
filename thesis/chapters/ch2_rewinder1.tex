@@ -47,7 +47,6 @@
 \newcommand{\argmin}{\rm argmin}
 
 \section{Introduction}
-\label{intro.sec}
 The existence of vast halos of unseen {\it dark} matter surrounding each galaxy
 has long been proposed to explain the surprisingly large motions of the {\it
 baryonic} matter that we can see \citep[e.g.,][]{rubin70}. Dark-matter-only
@@ -111,24 +110,24 @@ In this \article\ we re-examine and update a complimentary approach that uses
 tidal debris as a potential measure \citep[originally proposed
 by][]{johnston99a} in the context of current and near-future observational
 capabilities, and apply it to a simulation of the Sagittarius debris system
-(hereafter Sgr). In Section \ref{sec:context} we outline the observational
+(hereafter Sgr). In Section \ref{sec:ch2-context} we outline the observational
 prospects and Sgr properties that motivated this re-examination. In Section
-\ref{sec:method} we present the updated potential measure and test it with
-synthetic observations of simulated Sgr debris. In Section \ref{sec:discussion}
+\ref{sec:ch2-method} we present the updated potential measure and test it with
+synthetic observations of simulated Sgr debris. In Section \ref{sec:ch2-discussion}
 we highlight the advantages and shortcomings of this method. We conclude in
-Section \ref{sec:conclusion}.
+Section \ref{sec:ch2-conclusion}.
 
-\section{Context and motivation} \label{sec:context}
-The method presented in Section \ref{sec:method} takes advantage of three
+\section{Context and motivation} \label{sec:ch2-context}
+The method presented in Section \ref{sec:ch2-method} takes advantage of three
 distinct developments: (i) the demonstration of a technique for deriving
 distances to individual RR Lyrae stars with 2\% accuracies (Section
-\ref{sec:spitzer}); (ii) the prospect of proper motion measurements of the same
-stars with $\sim$10~$\mu$as/yr precision (Section \ref{sec:gaia}); and (iii) the
-tracing of debris associated with Sgr around the entire Galaxy (Section
-\ref{sec:sgr})
+\ref{sec:ch2-spitzer}); (ii) the prospect of proper motion measurements of the same
+stars with $\sim$10~$\mu$as/yr precision (Section \ref{sec:ch2-gaia}); and (iii)
+the tracing of debris associated with Sgr around the entire Galaxy (Section
+\ref{sec:ch2-sgr})
 
 \subsection{\spitzer\ and 2\% distance errors to RR Lyrae in the halo}
-\label{sec:spitzer}
+\label{sec:ch2-spitzer}
 
 There is a long tradition for using RR Lyrae stars in the Galaxy to study
 structure \citep[e.g.,][]{shapley18}, substructure \citep[e.g.,][]{sesar10}, and
@@ -168,7 +167,7 @@ both Sgr and Orp. }\label{fig:gaia_errors}
 \end{figure}
 
 \subsection{Gaia and the age of astrometry}
-\label{sec:gaia}
+\label{sec:ch2-gaia}
 The \gaia\ satellite \citep{gaia01} is an astrometric mission which aims to
 measure the positions of billions of stars with 10-100~$\mu$as accuracies.
 Combined with expected proper motion accuracies, this will enable full
@@ -188,7 +187,7 @@ from $<$10~kpc to 60~kpc. This enormous increase in volume will greatly refine
 data on debris systems in the halo.
 
 \subsection{The Sagittarius debris system}
-\label{sec:sgr}
+\label{sec:ch2-sgr}
 Sgr was discovered serendipitously during a radial velocity survey of the
 Galactic bulge \citep{ibata94}. Signatures of extensive stellar streams
 associated with Sgr have since  been mapped across the sky in carbon stars
@@ -250,7 +249,7 @@ The next section outlines a new method to take advantage of this information.
 %outlines a new method to take advantage of this information.
 
 \section{Description and test of our algorithm}
-\label{sec:method}
+\label{sec:ch2-method}
 With access to 6D information for stars in a tidal stream, each star becomes a
 powerful potential measure by exploiting the fact that the stars must have come
 from the same progenitor: if the orbits of the stars and progenitor are
@@ -263,7 +262,7 @@ by the satellite system (Figure~\ref{fig:ps_distance}).
 This approach was originally proposed by \citet{johnston99a} and was tested on
 the proposed characteristics of the Space Interferometry Mission
 \citep{unwin08}. Below we present an updated version of the algorithm: the
-promise of 2\% distances to RR Lyrae stars (see Section~\ref{sec:spitzer})
+promise of 2\% distances to RR Lyrae stars (see Section~\ref{sec:ch2-spitzer})
 enables a direct measurement (rather than approximate estimate, as previously
 assumed) of the position of a star within its debris structure. The test
 statistic that quantifies how well stars recombine with the satellite has also
@@ -338,8 +337,8 @@ Milky Way
   f(\bs{\theta}) &= \ln \det \Sigma_n.
 \end{align}
 
-\subsection{Application to Simulated Data} \label{sec:results}
-The LM10 simulation data (see Section \ref{sec:sgr}) is a perfect test-bed for
+\subsection{Application to Simulated Data} \label{sec:ch2-results}
+The LM10 simulation data (see Section \ref{sec:ch2-sgr}) is a perfect test-bed for
 evaluating the effectiveness of this method. We start by extracting both
 particle data and the satellite orbital parameters from the present-day snapshot
 of the simulation
@@ -396,7 +395,7 @@ parameters and one-sigma deviations to be $q_1 = 1.36 \pm 0.02$, $q_z = 1.36 \pm
 0.03$, $\phi = 96.0 \pm 1.5$ degrees, and $v_{\rm halo} = 123.2 \pm 1.6$ km/s.
 
 \section{Discussion, strengths, and limitations}
-\label{sec:discussion}
+\label{sec:ch2-discussion}
 
 The strengths of this method stem from its simplicity: it requires only a rough
 estimate of the satellite mass $m_{\rm sat}$ combined with backwards integration
@@ -429,7 +428,7 @@ satellite, which may not be available \citep[e.g., the Orphan
 Stream;][]{belokurov07}.
 
 \section{Conclusions and motivation for future work}
-\label{sec:conclusion}
+\label{sec:ch2-conclusion}
 
 This \article\ presents an algorithm for measuring the Galactic potential that
 anticipates combined data from the \spitzer\ and \gaia\ satellite

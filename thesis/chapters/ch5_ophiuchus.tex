@@ -54,7 +54,7 @@
 %  Galaxy: kinematics and dynamics
 %}
 
-\section{Introduction}\label{sec:introduction}
+\section{Introduction}\label{sec:ch5-introduction}
 
 The Ophiuchus stream \citep{bernard14, sesar15a} is a recently discovered
 stellar tidal stream that sits above the Galactic bulge at a Galactocentric
@@ -147,23 +147,23 @@ the plausibility of explaining the peculiarities of the stream using chaotic
 stream fanning. Note that an alternate model was recently proposed that instead
 places the stream progenitor on an orbit in resonance with the bar
 \citep{hattori15}. We discuss the differences between these two models in
-Section~\ref{sec:discussion}.
+Section~\ref{sec:ch5-discussion}.
 
-In Section~\ref{sec:method} we describe the methods used in this work: in
-Section~\ref{sec:potential} we describe the models we use for the gravitational
-potential of the Galaxy, in Section~\ref{sec:orbitfit-nonapdx} we outline the
+In Section~\ref{sec:ch5-method} we describe the methods used in this work: in
+Section~\ref{sec:ch5-potential} we describe the models we use for the gravitational
+potential of the Galaxy, in Section~\ref{sec:ch5-orbitfit-nonapdx} we outline the
 probabilistic procedure we use to fit orbits to the stream data (explained in
-detail in Appendix~\ref{sec:orbitfit}), and in Section~\ref{sec:mocks} we
+detail in Appendix~\ref{sec:ch5-orbitfit}), and in Section~\ref{sec:ch5-mocks} we
 explain the simple method we use to generate mock streams. In
-Section~\ref{sec:results1} we discuss the results from fitting orbits to the
+Section~\ref{sec:ch5-results1} we discuss the results from fitting orbits to the
 data in a static, axisymmetric potential model and several potential models with
-a time-dependent bar. In Section~\ref{sec:results2} we generate mock streams
+a time-dependent bar. In Section~\ref{sec:ch5-results2} we generate mock streams
 along these orbits to argue that chaotic stream-fanning is a plausible
 explanation for the observational peculiarities of the Ophiuchus stream. We
 discuss the implications of this work and possibilities for future work in
-Section~\ref{sec:discussion} and we conclude in Section~\ref{sec:conclusions}.
+Section~\ref{sec:ch5-discussion} and we conclude in Section~\ref{sec:ch5-conclusions}.
 
-\section{Methods}\label{sec:method}
+\section{Methods}\label{sec:ch5-method}
 
 Our goal is to (1) assess whether the Galactic bar can produce chaotic orbits in
 the vicinity of the Ophiuchus stream and (2) determine if chaotic density
@@ -180,7 +180,7 @@ Throughout we assume the Sun is at Galactocentric position $(x,y,z) =
 (-8.3,0,0)~{\rm kpc}$ \citep[e.g.,][]{schoenrich12} with velocity $(v_x,v_y,v_z)
 = (-11.1, 250, 7.25)~\kms$ \citep[e.g.,][]{schoenrich10, schoenrich12}.
 
-\subsection{Potential models}\label{sec:potential}
+\subsection{Potential models}\label{sec:ch5-potential}
 To integrate orbits and to compute chaos indicators we must choose a
 gravitational potential model to represent the potential of the Milky Way. The
 key feature of the potential that we would like to capture is the
@@ -321,12 +321,12 @@ density for a face-on (left) and edge-on (right) view of this potential model.
 \end{center}
 \end{table}
 
-\subsection{Fitting orbits to the Ophiuchus stream}\label{sec:orbitfit-nonapdx}
+\subsection{Fitting orbits to the Ophiuchus stream}\label{sec:ch5-orbitfit-nonapdx}
 
 In each of the potentials described above, we fit orbits to the measured
 kinematics of BHB stars that are high-likelihood members of the Ophiuchus stream
 \citep{sesar15a, sesar16}. The details of this procedure and a definition of the
-likelihood function we use are presented in Appendix~\ref{sec:orbitfit}. We use
+likelihood function we use are presented in Appendix~\ref{sec:ch5-orbitfit}. We use
 an ensemble Markov Chain Monte Carlo (MCMC) algorithm \citep{goodman10}
 implemented in \python\ (\package{emcee}) to generate samples from the posterior
 distribution over the parameters in our orbit-fitting model
@@ -351,7 +351,7 @@ compute the autocorrelation times, $\tau$, of the Markov chains and thin the
 chains by taking every $2\tau$ sample. This reduces the number of samples, but
 ensures that our posterior samples are effectively independent.
 
-\subsection{Generating mock streams}\label{sec:mocks}
+\subsection{Generating mock streams}\label{sec:ch5-mocks}
 
 To generate mock stellar streams, we use the method presented in
 \citet{fardal14}: Star particles are `released' from a progenitor system near
@@ -359,7 +359,7 @@ the Lagrange points with a dispersion in position and velocity that is set by
 the mass and orbit of the progenitor. We draw samples from the posterior
 probability distributions over orbital parameters from fitting orbits to the
 stream star members and use these as the progenitor orbital parameters
-(Section~\ref{sec:orbitfit}). For a given progenitor orbit---the 6D position of
+(Section~\ref{sec:ch5-orbitfit}). For a given progenitor orbit---the 6D position of
 the orbit today---we integrate the orbit backwards in time for a given
 integration period. From the endpoint of the backwards-integration (e.g., the
 past position), we begin integrating the orbit forward in time, but now at each
@@ -385,7 +385,7 @@ BHB stars from S16 excluded from the likelihood computation are shown as grey
 squares. Error bars may sometimes be smaller than the point size. Lines (blue)
 show sections of orbits integrated forward and backwards from initial conditions
 drawn from the posterior samples generated by MCMC (See
-Section~\ref{sec:orbitfit}). Note that the four higher dispersion stars (the
+Section~\ref{sec:ch5-orbitfit}). Note that the four higher dispersion stars (the
 four stars with highest longitude) were not used when computing the likelihood
 and are only shown for completeness. Though these four stars are significant
 outliers relative to the extrapolated orbit, they are (1) at the correct
@@ -413,7 +413,7 @@ that the most recent combined pericenter and disk shock fully disrupted the
 cluster, but, critically, that the cluster has been losing debris over its
 entire orbital history.
 
-\section{Results I: Orbit fits and chaos}\label{sec:results1}
+\section{Results 1: Orbit fits and chaos}\label{sec:ch5-results1}
 
 Figure~\ref{fig:orbitfits} summarizes our results from fitting orbits to the BHB
 stream stars. Shown in each panel are the high-probability Ophiuchus stream
@@ -477,7 +477,7 @@ of $\approx$10--20 orbital periods.
 %\includegraphics[width=0.5\textwidth]{figures/lyapunov-hist}
 \includegraphics[width=\textwidth]{figures/ch4/lyapunov-hist}
 \caption{ Histograms of estimated Lyapunov time, $\lyapt=1/\lyapexp$, for
-posterior samples from the orbit fitting procedure (Section~\ref{sec:orbitfit}).
+posterior samples from the orbit fitting procedure (Section~\ref{sec:ch5-orbitfit}).
 More chaotic orbits, i.e. those with shorter Lyapunov times, typically occur in
 barred potentials with higher pattern speeds. There is little dependence on bar
 angle. All orbits in these barred potential models are strongly chaotic with
@@ -487,7 +487,7 @@ typical orbital period for Ophiuchus stream stars is a few hundred Megayears.}
 \end{center}
 \end{figure}
 
-\section{Results 2: Stream models for the Ophiuchus stream}\label{sec:results2}
+\section{Results 2: Stream models for the Ophiuchus stream}\label{sec:ch5-results2}
 
 Here we study whether the observed abrupt drop in density and possible fanned
 debris stars can be explained without assuming a sudden change in the mass-loss
@@ -498,7 +498,7 @@ many Gigayears.
 
 For each potential model, we randomly sample 256 orbits from the orbital
 parameter posterior distributions and generate mock streams along each orbit. We
-use the method outlined above (Section \ref{sec:mocks}) to generate the streams
+use the method outlined above (Section \ref{sec:ch5-mocks}) to generate the streams
 and set the free parameters as follows: (1) we evolve the progenitors for 6 Gyr
 along each orbit prior to the current position to explore stream models where
 the shortness of the stream is \emph{not} due to an instantaneous disruption 400
@@ -628,7 +628,7 @@ of the Sun (symbol at $(x,z)=(-8.3,0)~{\rm kpc}$) and the ``window'' of the
 heliocentric, sky-position plots of
 Figures~\ref{fig:mockstream0}--\ref{fig:mockstream1} (shown as blue lines).
 
-\section{Discussion}\label{sec:discussion}
+\section{Discussion}\label{sec:ch5-discussion}
 
 The model streams presented here do not reproduce all observed features of the
 Ophiuchus stream (the details of the potential and the orbit predict vastly
@@ -698,7 +698,7 @@ kinematic surveys (from, e.g., \project{Gaia}) to place constraints on
 long-standing puzzles about the primordial globular cluster population
 \citep[e.g.,][]{murali97, gnedin97}.
 
-\section{Conclusions}\label{sec:conclusions}
+\section{Conclusions}\label{sec:ch5-conclusions}
 
 We have shown that, with a qualitative but observationally-motivated potential
 model for the Galactic bar, the orbits of the Ophiuchus stream stars are likely
@@ -807,7 +807,7 @@ demonstrates that the stream is nearly aligned our viewing angle. }
 \setcounter{section}{0}%
 \renewcommand\thesection{\thechapter.\Alph{section}}
 
-\section{Transformation from Galactic to Ophiuchus stream coordinates} \label{sec:rotationmatrix}
+\section{Transformation from Galactic to Ophiuchus stream coordinates} \label{sec:ch5-rotationmatrix}
 The transformation matrix is approximately represented as
 \begin{equation*}
 \left( \begin{array}{c}
@@ -826,7 +826,7 @@ z \end{array} \right)_{\rm Gal}
 \end{equation*}
 but the precise transformation and coordinate frame is implemented in \python\ using the \package{Astropy} coordinates package.\footnote{See \url{http://adrian.pw/ophiuchus} for more information}  This code is hosted on \project{GitHub}.\footnote{\url{https://github.com/adrn/ophiuchus}}
 
-\section{Fitting orbits to stellar streams}\label{sec:orbitfit}
+\section{Fitting orbits to stellar streams}\label{sec:ch5-orbitfit}
 
 Our goal is to infer the posterior probability distributions over orbital
 initial conditions, $\bs{w}_0=(l, b, \DM, \mu_l, \mu_b, v_r)_0$, given a
@@ -841,7 +841,7 @@ densest part of the stream \cite[all BHB stars except the `fanned' stars:
 cand15, cand26, cand49, cand54 from][]{sesar16}. We represent the longitude and
 latitude in these coordinates as $(\phi_1, \phi_2)$ and the rotation matrix to
 transform from Galactic to these coordinates is given in
-Appendix~\ref{sec:rotationmatrix}. We treat the stream longitude, $\phi_1$, as
+Appendix~\ref{sec:ch5-rotationmatrix}. We treat the stream longitude, $\phi_1$, as
 the perfectly-known, independent variable so that all other coordinates can be
 expressed as functions of this longitude (e.g., $\phi_2(\phi_1)$, ${\rm
 DM}(\phi_1)$, etc.). This methodology is similar to that used in

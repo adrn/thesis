@@ -63,7 +63,7 @@
 %\keywords{
 %}
 
-\section{Introduction}\label{sec:introduction}
+\section{Introduction}\label{sec:ch4-introduction}
 
 The dark-matter haloes of galaxies are thought to be triaxial in shape with axis
 ratios and alignments that depend on radius. However, despite suggestive
@@ -171,19 +171,19 @@ potential may have significant consequences for the observability and
 survivability of thin, cold tidal streams.
 
 This \article\ is organized as follows. We review relevant nonlinear dynamics in
-Section~\ref{sec:nldreview}. In Section~\ref{sec:methods}, we describe our
+Section~\ref{sec:ch4-nldreview}. In Section~\ref{sec:ch4-methods}, we describe our
 choice of potential, method for numerical orbit integration, and introduce the
 chaos indicators used in this work. Our results are split into three
-subsections: in Section~\ref{sec:results1} we present iso-energy grids of orbits
+subsections: in Section~\ref{sec:ch4-results1} we present iso-energy grids of orbits
 and discuss the orbit classes and chaotic timescales present in our potential;
-in Section~\ref{sec:results2} we study the density evolution of small ensembles
+in Section~\ref{sec:ch4-results2} we study the density evolution of small ensembles
 of orbits around each orbit of the previous section; in
-Section~\ref{sec:results3} we describe the behavior of chaotic diffusion and use
+Section~\ref{sec:ch4-results3} we describe the behavior of chaotic diffusion and use
 this to explain how chaos is relevant for tidal streams over short times. We
-discuss the implications of our results in Section~\ref{sec:discussion}, and
-conclude in Section~\ref{sec:conclusions}.
+discuss the implications of our results in Section~\ref{sec:ch4-discussion}, and
+conclude in Section~\ref{sec:ch4-conclusions}.
 
-\section{Review of nonlinear dynamics}\label{sec:nldreview}
+\section{Review of nonlinear dynamics}\label{sec:ch4-nldreview}
 
 To explore the question of if and how chaos manifests in the density evolution
 of orbit ensembles over timescales much shorter than that predicted from generic
@@ -362,7 +362,7 @@ chaotic motion. Any transformations to angle-action coordinates must be defined
 local to each resonance region due to the destruction of tori and chaotic motion
 which lead to discontinuous changes in orbital properties.
 
-\subsection{The behavior of chaotic orbits in non-integrable potentials}\label{sec:behavior-chaotic}
+\subsection{The behavior of chaotic orbits in non-integrable potentials}\label{sec:ch4-behavior-chaotic}
 
 Chaotic orbits have no orbital actions and only conserve energy (if the
 potential is time-independent). The orbits therefore do not have a single set of
@@ -402,7 +402,7 @@ orbits.' Additionally, if the volume of the surrounded region in frequency space
 is comparable to the characteristic spread of frequencies in the tidal debris,
 this small-scale evolution will be important for tidal debris.
 
-\subsection{Mixing of orbit ensembles}\label{sec:chaotic-mixing}
+\subsection{Mixing of orbit ensembles}\label{sec:ch4-chaotic-mixing}
 
 An ensemble of regular orbits (e.g., tidal debris) will phase-mix because of
 (small) differences in the fundamental frequencies of the orbits. The frequency
@@ -433,7 +433,7 @@ chaotic timescales are predicted to be long \citep[e.g.,][]{pearson15}. We then
 discuss how this would affect our understanding of the coherence and density
 evolution of tidal streams.
 
-\section{Numerical methods}\label{sec:methods}
+\section{Numerical methods}\label{sec:ch4-methods}
 
 Our goal is to map the orbit structure of arbitrary (galactic) potentials, with
 an emphasis on identifying the chaotic orbits and understanding the evolution of
@@ -442,7 +442,7 @@ how this chaos-enhanced density evolution can affect tidal stream morphology. In
 this section, we describe the methods we will use to detect and quantify the
 strength of chaos for large grids of orbits.
 
-\subsection{Potential choice}\label{sec:potential}
+\subsection{Potential choice}\label{sec:ch4-potential}
 
 The density distributions within dark-matter haloes formed in cosmological
 $N$-body simulations are generically triaxial \citep[e.g.,][]{jing02, bett07,
@@ -495,7 +495,7 @@ triaxial NFW potential considered in this work. For the potential plot there are
 eight contour levels evenly spaced and linear in the value of the potential. For
 the density plot there are eight contour levels logarithmically spaced from
 $10^4~\msun~{\rm kpc}^{-3}$ to $10^7~\msun~{\rm kpc}^{-3}$.}
-\label{fig:potential}
+\label{fig:ch4-potential}
 \end{figure}
 
 In this work, we use the triaxial potential expression from \citet{leesuto03},
@@ -512,7 +512,7 @@ functions $F_i(u)$ are given in the appendix of \cite{leesuto03}. We chose
 $r_s=20~{\rm kpc}$ and $v_c = 175~{\rm km}~{\rm s}^{-1}$ by taking the mean halo
 concentration for a ${\rm M}_{vir} \approx 10^{12}~\msun$ halo, $c_e\approx5$,
 from \cite{jing02} and by assuming $R_{vir}\approx200~{\rm kpc}$.
-Figure~\ref{fig:potential} shows equipotential contours of this potential, and
+Figure~\ref{fig:ch4-potential} shows equipotential contours of this potential, and
 Table~\ref{tbl:potential} summarizes the potential parameters.
 
 \begin{table*}[ht]
@@ -547,9 +547,9 @@ kazantzidis04,debattista08,veraciro11,butsky15}, significant substructure
 \citep{moore98,zemp09}, or time dependence \citep[either from bulk rotation,
 mass growth, mergers, etc.; see, e.g.,][]{bailin05}. We expect inclusion of any
 of these effects to increase the complexity of the resonant structure and
-influence of chaos (see Section~\ref{sec:discussion}).
+influence of chaos (see Section~\ref{sec:ch4-discussion}).
 
-\subsection{Orbit integration}\label{sec:integration}
+\subsection{Orbit integration}\label{sec:ch4-integration}
 
 We use the Dormand-Prince 8th-order Runge-Kutta scheme \citep{prince81} to
 integrate orbits in the above potential. Specifically, we use a \texttt{Python}
@@ -562,7 +562,7 @@ the integrator uses adaptive stepping between each main step in order to satisfy
 a specified tolerance (we set the absolute tolerance to $\approx$100 times
 machine precision, $\texttt{atol} = 10^{-13}$).
 
-\subsection{Lyapunov exponents} \label{sec:lyap}
+\subsection{Lyapunov exponents} \label{sec:ch4-lyap}
 
 The most well-known method for assessing chaotic motion is to analyze the
 Lyapunov spectrum or maximum Lyapunov exponent (MLE) of an orbit
@@ -573,7 +573,7 @@ it can take integration for many thousands of orbital periods to compute a
 converged numerical approximation of the MLE for a moderately chaotic orbit. In
 this work, we use the algorithm introduced by \cite{wolf85} for computing the
 MLE (for more a more detailed description of this algorithm, see
-Appendix~\ref{sec:lyapapdx}).
+Appendix~\ref{sec:ch4-lyapapdx}).
 
 The MLE, $\lambda_{\rm max}$, is interpreted as a rate that quantifies the
 exponential divergence of infinitesimally close chaotic orbits. It is therefore
@@ -584,7 +584,7 @@ useful to consider the corresponding $e$-folding time by inverting the rate,
 We will use this as the prediction from the Lyapunov exponent for the timescale
 over which chaos should be dynamically important for a given orbit.
 
-\subsection{Frequency diffusion rate}\label{sec:naff}
+\subsection{Frequency diffusion rate}\label{sec:ch4-naff}
 
 Bounded, regular orbits in a triaxial potential have three fundamental
 frequencies, $\bs{\Omega}$, that determine the periodic behavior of motion. The
@@ -605,7 +605,7 @@ this slight modification of the algorithm as \superfreq\ \citep{superfreq} and
 the code is open-source and publicly available on
 \project{GitHub}.\footnote{\url{https://github.com/adrn/SuperFreq}} For more
 details about the algorithm and differences with previous work, see
-\cite{laskar88, laskar93, papaphilippou96} and Appendix~\ref{sec:naffapdx}.
+\cite{laskar88, laskar93, papaphilippou96} and Appendix~\ref{sec:ch4-naffapdx}.
 
 If an orbit is chaotic, the motion can no longer be expanded in terms of a
 single set of fundamental frequencies. For a weakly chaotic orbit, the orbit may
@@ -648,19 +648,19 @@ evolve by this amount.
 %
 \section{Results}
 
-In Section~\ref{sec:results1}, we generate grids of orbits in the potential
+In Section~\ref{sec:ch4-results1}, we generate grids of orbits in the potential
 described above to map the orbital structure of the potential. We classify each
 orbit in terms of the strength of chaos along the orbit as computed using the
-Lyapnov and frequency diffusion times of Section~\ref{sec:methods}. With this
-initial classification, in Section~\ref{sec:results2} we follow the evolution of
+Lyapnov and frequency diffusion times of Section~\ref{sec:ch4-methods}. With this
+initial classification, in Section~\ref{sec:ch4-results2} we follow the evolution of
 ensembles of trajectories generated around each orbit in the initial grid. We
 find that the configuration-space density of ensembles around weakly chaotic
 orbits evolve faster (e.g., in mean density) than expected given the timescales
 over which chaos is computed to be relevant for the parent orbits. In
-Section~\ref{sec:results3}, we explain this phenomenon in the context of how
-chaotic diffusion occurs (e.g., Section~\ref{sec:behavior-chaotic}).
+Section~\ref{sec:ch4-results3}, we explain this phenomenon in the context of how
+chaotic diffusion occurs (e.g., Section~\ref{sec:ch4-behavior-chaotic}).
 
-\subsection{Part I: Lyapunov and frequency diffusion times}\label{sec:results1}
+\subsection{Part I: Lyapunov and frequency diffusion times}\label{sec:ch4-results1}
 
 We generate an isoenergy grid of initial conditions along the $xz$ ($y=0$)
 plane\footnote{$x$ is the major and $z$ the minor axis.} with energy (per unit
@@ -696,13 +696,13 @@ panels represents a single orbit, and the shading of each pixel corresponds to
 the median pericentric distance (left) or median apocentric distance (right)
 computed over 64 orbital periods. The central black band in the left panel and
 white band in the right panel are tube orbits with apocenter-to-pericenter
-ratios close to one. The four arrows are explained in Section~\ref{sec:results2}
+ratios close to one. The four arrows are explained in Section~\ref{sec:ch4-results2}
 and the caption of Figure~\ref{fig:lyapmap}.}
 \label{fig:apoper}
 \end{figure}
 
 We integrate all orbits in the grid for 10000 orbital periods and use the method
-described in Section~\ref{sec:lyap} to compute the MLEs.
+described in Section~\ref{sec:ch4-lyap} to compute the MLEs.
 Figure~\ref{fig:lyapmap} again shows the grid of initial conditions, but now the
 color corresponds to the logarithm of the inverse of the MLE (the Lyapunov
 time). The darker pixels have shorter Lyapunov times and are more chaotic.
@@ -721,7 +721,7 @@ orbits with $t_\lambda/\periods \gtrsim 700$ appear regular because the
 integration time for each orbit is insufficient to resolve weak chaos. Four
 orbits are pointed out with arrows---from top to bottom, these are the strongly
 chaotic (D), near-resonant (A), weakly chaotic (C), and non-resonant (B) orbits
-of Table~\ref{tbl:orbit-info} (see Section~\ref{sec:results2}).}
+of Table~\ref{tbl:orbit-info} (see Section~\ref{sec:ch4-results2}).}
 \label{fig:lyapmap}
 \end{center}
 \end{figure}
@@ -759,7 +759,7 @@ are measured precisely so that small changes in the frequencies can be detected
 over just $\approx$10s of orbits. Four orbits are pointed out with arrows---from
 top to bottom, these are the strongly chaotic (D), near-resonant (A), weakly
 chaotic (C), and non-resonant (B) orbits of Table~\ref{tbl:orbit-info} (see
-Section~\ref{sec:results2}).} \label{fig:freqdiff}
+Section~\ref{sec:ch4-results2}).} \label{fig:freqdiff}
 \end{center}
 \end{figure}
 
@@ -779,7 +779,7 @@ phase-mixing of tidal debris with potentially enhanced mixing due to chaos. We
 then compare the density evolution of the ensembles to the single-orbit chaos
 indicators computed in this section.
 
-\subsection{Part II: Ensemble properties and mixing} \label{sec:results2}
+\subsection{Part II: Ensemble properties and mixing} \label{sec:ch4-results2}
 
 The Lyapunov and frequency diffusion times measure the timescales over which
 chaos is relevant for a given orbit---that is, these quantities are measures of
@@ -827,7 +827,7 @@ the spherically-averaged enclosed mass of the host potential to estimate the
 above debris scales. % we have verified this using regular orbits in a logarithmic potential...
 
 We start by considering four particular orbits chosen from the orbit grid of
-Section~\ref{sec:results1}: a regular, near-resonant orbit (A), a regular,
+Section~\ref{sec:ch4-results1}: a regular, near-resonant orbit (A), a regular,
 non-resonant orbit (B), a weakly chaotic orbit (C), and a more strongly chaotic
 orbit (D). The orbits were chosen to be close on the orbit grid so that their
 orbital properties (e.g., apocenter, pericenter) are similar, but have different
@@ -973,10 +973,10 @@ the two regular (A,B) and the weakly chaotic (C) orbit ensembles---even though
 the chaotic timescale of the weakly chaotic ensemble parent orbit is several
 times the integration period used above---we compute the final mean density for
 orbit ensembles generated around each orbit in the grid described in
-Section~\ref{sec:results1}. For all ensembles, we integrate the orbits for 64
+Section~\ref{sec:ch4-results1}. For all ensembles, we integrate the orbits for 64
 (parent) orbital periods and compute the initial and final values of the mean,
 configuration-space density. Figure~\ref{fig:ensemblemap-meandensity} again
-shows the grid of initial conditions (Section~\ref{sec:results1}, but now the
+shows the grid of initial conditions (Section~\ref{sec:ch4-results1}, but now the
 greyscale indicates the ratio of the final mean density to the initial density.
 Interestingly, much of the structure that is visible in the upper-half of the
 frequency diffusion time map (Figure~\ref{fig:freqdiff}) is again visible in
@@ -1024,8 +1024,8 @@ We conclude from these experiments that the degree of chaos is an indicator that
 ensembles of orbits may mix faster than predicted from regular phase-mixing,
 however the Lyapunov time and frequency diffusion time are not good predictors
 for the timescale over which this mixing will occur. To understand this
-discrepancy, we next explore why this occurs (Section~\ref{sec:results3}, in the
-context of Section~\ref{sec:chaotic-mixing}).
+discrepancy, we next explore why this occurs (Section~\ref{sec:ch4-results3}, in the
+context of Section~\ref{sec:ch4-chaotic-mixing}).
 
 % Figure ??
 \begin{figure}[hp!]
@@ -1034,19 +1034,19 @@ context of Section~\ref{sec:chaotic-mixing}).
 \caption{The same grid of orbits as shown in Figure~\ref{fig:apoper}, but now
 the greyscale intensity is set by the mean density of a of small ensembles of
 orbits after integration for 64 orbital periods. The orbit ensembles are
-generated around each parent orbit in the grid (Section~\ref{sec:results2}) and
+generated around each parent orbit in the grid (Section~\ref{sec:ch4-results2}) and
 the mean density is a kernel density estimation (KDE) with an adaptive
 Epanechnikov kernel. Given the extremely long chaotic timescales of the weakly
 chaotic orbits in the upper half of the grid, it is surprising that any of the
 high-order resonant structure is visible in this map. Four orbits are pointed
 out with arrows---from top to bottom, these are the strongly chaotic (D),
 near-resonant (A), weakly chaotic (C), and non-resonant (B) orbits of
-Table~\ref{tbl:orbit-info} (see Section~\ref{sec:results2}).}
+Table~\ref{tbl:orbit-info} (see Section~\ref{sec:ch4-results2}).}
 \label{fig:ensemblemap-meandensity}
 \end{center}
 \end{figure}
 
-\subsection{Part III: Short-time frequency evolution}\label{sec:results3}
+\subsection{Part III: Short-time frequency evolution}\label{sec:ch4-results3}
 
 Why does chaos manifest itself after just 64 orbital periods around orbits with
 predicted chaotic timescales larger than thousands of orbital periods? Both the
@@ -1058,7 +1058,7 @@ orbital time but short compared to the Arnold diffusion time, however
 small-scale variation of the frequencies may occur over much shorter timescales.
 
 As a demonstration of the small-scale frequency modulation, we consider again
-the four orbits of Section~\ref{sec:results2} (initial conditions are listed in
+the four orbits of Section~\ref{sec:ch4-results2} (initial conditions are listed in
 Table~\ref{tbl:orbit-info}). To resolve the short-time behavior of the frequency
 diffusion (corresponding to motion across or around resonance layers) we compute
 the frequencies in a series of rolling windows along each orbit. We use a window
@@ -1180,7 +1180,7 @@ and strongly chaotic ensemble frequency distributions spread significantly.}
 \end{center}
 \end{figure}
 
-\section{Discussion: limitations and future work}\label{sec:discussion}
+\section{Discussion: limitations and future work}\label{sec:ch4-discussion}
 
 % Something about this: The timescales in this paper are not meant to be
 % interpreted physically, as the potential is a very crude approximation to the
@@ -1308,7 +1308,7 @@ for thin streams in real galaxies, though \cite{carlberg15} has shown that it is
 also possible to get short, high density segments of streams from debris formed
 on eccentric orbits.
 
-\section{Summary and Conclusions}\label{sec:conclusions}
+\section{Summary and Conclusions}\label{sec:ch4-conclusions}
 
 We have considered here a simple triaxial gravitational potential chosen to
 mimic the median properties of dark-matter haloes formed in dark-matter-only
@@ -1399,7 +1399,7 @@ supported by National Science Foundation grant number ACI-1053575 \citep{xsede}.
 % appendix
 \setcounter{section}{0}%
 \renewcommand\thesection{\thechapter.\Alph{section}}
-\section{Lyapunov exponents} \label{sec:lyapapdx}
+\section{Lyapunov exponents} \label{sec:ch4-lyapapdx}
 
 % Using the definition of $w$ from Equation~\ref{eq:coords}, we can write
 % Hamilton's equations as \footnote{A sum is implied with any repeated indices.}
@@ -1465,7 +1465,7 @@ estimated after a very long time to approximate the limit of
 Equation~\ref{eq:lmax}.
 
 For most regular orbits, deviations will grow linearly or as a power-law of
-time. As we have seen in Section~\ref{sec:nldreview}, if the orbit is regular,
+time. As we have seen in Section~\ref{sec:ch4-nldreview}, if the orbit is regular,
 there exists a local transformation to action-angle variables where the angle
 variables increase linearly with time, $\theta_i \propto \Omega_i t$. We can
 look at small variations around the angle-space orbit,
@@ -1493,7 +1493,7 @@ practice, the MLE is often estimated as the mean of $\lambda_N$ after the
 summation diverges from power-law behavior. For weakly chaotic orbits, reliable
 computation of the MLE may take integration of thousands of orbital periods.
 
-\section{SuperFreq}\label{sec:naffapdx}
+\section{SuperFreq}\label{sec:ch4-naffapdx}
 
 \renewcommand{\thefigure}{\thesection.\arabic{figure}}
 
